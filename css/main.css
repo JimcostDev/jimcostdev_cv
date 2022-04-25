@@ -1,0 +1,133 @@
+/**************** GENERALES ***************************/
+:root {
+  --color-principal: #f7cd00;
+  --color-secundario: #fdfbfb;
+  --color-terciario: #001028;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.contenedor {
+  margin: 100px auto;
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contenedor .titulo {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+.contenedor .linea {
+  border: 1px solid var(--color-terciario);
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.contenedor .principal .titulo-principal {
+  font-size: 20px;
+}
+
+.contenedor .principal .linea-principal {
+  border: 1px solid var(--color-principal);
+  width: 30%;
+}
+
+.contenedor .bold {
+    font-weight: 600;
+    color: var(--color-terciario);
+}
+
+/**************** CONTACTO Y REFERENCIAS ***************************/
+.contenedor aside {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background: var(--color-principal);
+  padding: 50px;
+  width: 30%;
+}
+
+.contenedor .foto-perfil {
+  width: 128px;
+}
+
+.contenedor .foto-perfil img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.contenedor .contacto {
+  margin-bottom: 30px;
+}
+
+.contenedor aside a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--color-terciario);
+}
+
+.contenedor aside a:hover {
+  text-decoration: underline;
+}
+
+.contenedor .principal .rol{
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+/**************** ESTUDIOS Y EXPERIENCIA LABORAL ***************************/
+.contenedor .principal {
+  display: flex;
+  align-items: flex-end;
+  background: var(--color-secundario);
+  flex-direction: column;
+  width: 70%;
+  padding: 100px;
+}
+
+/********************* RESPONSIVE ************************/
+
+@media screen and (max-width: 720px) {
+	.contenedor {
+    margin: 100px auto;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contenedor aside {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background: var(--color-principal);
+    padding: 20px;
+    width: 40%;
+  }
+
+  .contenedor .principal {
+    display: flex;
+    align-items: flex-end;
+    background: var(--color-secundario);
+    flex-direction: column;
+    width: 60%;
+    padding: 50px;
+  }
+}
