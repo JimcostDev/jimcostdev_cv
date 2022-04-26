@@ -130,7 +130,7 @@ body {
 
 /********************* RESPONSIVE ************************/
 
-@media screen and (max-width: 720px) {
+/* @media screen and (max-width: 720px) {
 	.contenedor {
     margin: 100px auto;
     width: 600px;
@@ -156,4 +156,4 @@ body {
     width: 60%;
     padding: 50px;
   }
-}
+} */
