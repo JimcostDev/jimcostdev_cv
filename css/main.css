@@ -3,7 +3,6 @@
   --color-principal: #f7cd00;
   --color-secundario: #fdfbfb;
   --color-terciario: #001028;
-  --color-btn: #40f30a;
 }
 
 * {
@@ -20,7 +19,7 @@ body {
 }
 
 .contenedor {
-  margin: 100px auto;
+  margin: 20px auto;
   width: 860px;
   display: flex;
   flex-direction: row;
@@ -107,25 +106,27 @@ body {
 /********************** BOTON ***************************/
 
 .descargar{
-  margin: 100px auto;
+  margin: 10px auto;
   width: 860px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+  align-content: flex-start;
 }
 .descargar .btn-descargar{
   display: block;
   margin: auto;
   padding: 12px;
-  background-color: var(--color-btn);
+  background-color: var(--color-terciario);
   cursor: pointer;
   border: none;
   border-radius: 2px;
- float: left;
+  width: 20%;
+  color: var(--color-principal);
 }
 
 .descargar .btn-descargar:hover{
-  background-color: #40f30ac9;
+  background-color: #000a1a;
 }
 
 /********************* RESPONSIVE ************************/
