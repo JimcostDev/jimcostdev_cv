@@ -3,6 +3,7 @@
   --color-principal: #f7cd00;
   --color-secundario: #fdfbfb;
   --color-terciario: #001028;
+  --color-btn: #40f30a;
 }
 
 * {
@@ -100,6 +101,31 @@ body {
   flex-direction: column;
   width: 70%;
   padding: 70px;
+}
+
+
+/********************** BOTON ***************************/
+
+.descargar{
+  margin: 100px auto;
+  width: 860px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.descargar .btn-descargar{
+  display: block;
+  margin: auto;
+  padding: 12px;
+  background-color: var(--color-btn);
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+ float: left;
+}
+
+.descargar .btn-descargar:hover{
+  background-color: #40f30ac9;
 }
 
 /********************* RESPONSIVE ************************/
