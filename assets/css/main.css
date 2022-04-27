@@ -1,8 +1,8 @@
-/**************** GENERALES ***************************/
+/**************** GENERALES ************************** */
 :root {
-  --color-principal: #f7cd00;
-  --color-secundario: #fdfbfb;
-  --color-terciario: #001028;
+  --color-principal:#f7cd00;
+  --color-secundario:#fdfbfb;
+  --color-terciario:#001028;
 }
 
 * {
@@ -25,7 +25,6 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
-
 .contenedor .titulo {
   font-size: 16px;
   font-weight: 600;
@@ -34,28 +33,24 @@ body {
   width: 100%;
   text-align: left;
 }
-
 .contenedor .linea {
   border: 1px solid var(--color-terciario);
   width: 100%;
   margin-bottom: 10px;
 }
-
 .contenedor .principal .titulo-principal {
   font-size: 20px;
 }
-
 .contenedor .principal .linea-principal {
   border: 1px solid var(--color-principal);
   width: 30%;
 }
-
 .contenedor .bold {
-    font-weight: 600;
-    color: var(--color-terciario);
+  font-weight: 600;
+  color: var(--color-terciario);
 }
 
-/**************** CONTACTO Y REFERENCIAS ***************************/
+/**************** CONTACTO Y REFERENCIAS ************************** */
 .contenedor aside {
   display: flex;
   align-items: flex-start;
@@ -64,35 +59,30 @@ body {
   padding: 40px;
   width: 30%;
 }
-
 .contenedor .foto-perfil {
   width: 128px;
 }
-
 .contenedor .foto-perfil img {
   border-radius: 50%;
   width: 100%;
 }
-
 .contenedor .contacto {
   margin-bottom: 30px;
 }
-
 .contenedor aside a {
   text-decoration: none;
   display: inline-block;
   color: var(--color-terciario);
 }
-
 .contenedor aside a:hover {
   text-decoration: underline;
 }
-
-.contenedor .principal .rol{
+.contenedor .principal .rol {
   font-size: 16px;
   margin-bottom: 5px;
 }
-/**************** ESTUDIOS Y EXPERIENCIA LABORAL ***************************/
+
+/**************** ESTUDIOS Y EXPERIENCIA LABORAL ************************** */
 .contenedor .principal {
   display: flex;
   align-items: flex-end;
@@ -102,10 +92,8 @@ body {
   padding: 70px;
 }
 
-
-/********************** BOTON ***************************/
-
-.descargar{
+/********************** BOTON ************************** */
+.descargar {
   margin: 10px auto;
   width: 860px;
   display: flex;
@@ -113,7 +101,7 @@ body {
   flex-wrap: wrap;
   align-content: flex-start;
 }
-.descargar .btn-descargar{
+.descargar .btn-descargar {
   display: block;
   margin: auto;
   padding: 12px;
@@ -124,37 +112,8 @@ body {
   width: 20%;
   color: var(--color-principal);
 }
-
-.descargar .btn-descargar:hover{
+.descargar .btn-descargar:hover {
   background-color: #000a1a;
 }
 
-/********************* RESPONSIVE ************************/
-
-/* @media screen and (max-width: 720px) {
-	.contenedor {
-    margin: 100px auto;
-    width: 600px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .contenedor aside {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    background: var(--color-principal);
-    padding: 20px;
-    width: 40%;
-  }
-
-  .contenedor .principal {
-    display: flex;
-    align-items: flex-end;
-    background: var(--color-secundario);
-    flex-direction: column;
-    width: 60%;
-    padding: 50px;
-  }
-} */
+/*# sourceMappingURL=main.css.map */
