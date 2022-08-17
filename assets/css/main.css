@@ -46,7 +46,14 @@ body {
   width: 30%;
 }
 .contenedor .bold {
+  margin: 10px;
   font-weight: 600;
+  color: var(--color-terciario);
+}
+
+.contenedor a {
+  text-decoration: none;
+  display: inline-block;
   color: var(--color-terciario);
 }
 
