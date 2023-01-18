@@ -30,6 +30,7 @@ body {
   margin-top: 20px;
   width: 100%;
   text-align: left;
+  text-transform: uppercase;
 }
 .contenedor .linea {
   border: 1px solid var(--color-terciario);
@@ -65,7 +66,22 @@ body {
   width: 100%;
 }
 .contenedor .contacto {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+.contenedor .contacto p {
+  margin-bottom: 5px;
+}
+.contenedor .redes-sociales {
+  margin-bottom: 20px;
+}
+.contenedor .redes-sociales p {
+  margin-bottom: 5px;
+}
+.contenedor .languages {
+  margin-bottom: 20px;
+}
+.contenedor .languages p {
+  margin-bottom: 5px;
 }
 .contenedor aside a {
   text-decoration: none;
@@ -74,10 +90,6 @@ body {
 }
 .contenedor aside a:hover {
   text-decoration: underline;
-}
-.contenedor .principal .rol {
-  font-size: 16px;
-  margin-bottom: 5px;
 }
 
 /**************** ESTUDIOS Y EXPERIENCIA LABORAL ************************** */
