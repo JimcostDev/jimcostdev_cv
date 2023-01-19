@@ -1,18 +1,19 @@
 /**************** ESTUDIOS Y EXPERIENCIA LABORAL **************************
-
 .contenedor 
   .principal
     display: flex
     align-items: flex-end
-    background: var(--color-secundario)
+    background: $color-secundario
     flex-direction: column
     width: 70%
     padding: 70px
+    .experiencia-laboral
       .descripcion
-        .rol
-          font-size: 16px
-          margin-bottom: 10px
-        
+        a
+          text-decoration: none
+          color: $color-terciario
+          &:hover
+            color: $color-principal
 
 /********************** BOTON **************************
 
@@ -28,12 +29,12 @@
     display: block
     margin: auto
     padding: 12px
-    background-color: var(--color-terciario)
+    background-color: $color-terciario
     cursor: pointer
     border: none
     border-radius: 2px
     width: 20%
-    color: var(--color-principal)
+    color: $color-principal
 
     &:hover
       background-color: #000a1a

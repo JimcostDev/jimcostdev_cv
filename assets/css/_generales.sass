@@ -1,10 +1,10 @@
-/**************** GENERALES **************************
-\:root
-  --color-principal:#f7cd00
-  --color-secundario:#fdfbfb
-  --color-terciario:#001028
-  --margen-abajo-seccion: 20px  
-  --margen-abajo-texto: 15px
+/**************** GENERALES **************************/
+
+$color-principal:#f7cd00
+$color-secundario:#fdfbfb
+$color-terciario:#001028
+$margen-abajo-seccion: 20px 
+$margen-abajo-texto: 5px
 
 *
   padding: 0
@@ -34,7 +34,7 @@ body
     text-transform: uppercase
 
   .linea
-    border: 1px solid var(--color-terciario)
+    border: 1px solid $color-terciario
     width: 100%
     margin-bottom: 10px
 
@@ -43,10 +43,13 @@ body
       font-size: 20px
 
     .linea-principal
-      border: 1px solid var(--color-principal)
+      border: 1px solid $color-principal
       width: 30%
 
   .bold
     font-weight: 600
-    color: var(--color-terciario)
+    color: $color-terciario
+  
+  .mb
+    margin-bottom: $margen-abajo-texto
 
