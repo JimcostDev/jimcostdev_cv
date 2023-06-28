@@ -64,10 +64,14 @@ function generarPDF() {
             })
             .from($elementoParaConvertir)
             .save()
-            .catch(err => console.log(err))
-            .finally()
             .then(() => {
-                console.log('¡Se guardó el documento!');
+                // Muestra una alerta de SweetAlert indicando que el documento se guardó exitosamente
+                Swal.fire('¡Documento guardado!', 'El documento se ha guardado correctamente.', 'success');
+            })
+            .catch(err => {
+                // Muestra una alerta de SweetAlert indicando que ocurrió un error al guardar el documento
+                Swal.fire('Error', 'Ocurrió un error al guardar el documento.', 'error');
+                console.log(err);
             });
     });
 }
