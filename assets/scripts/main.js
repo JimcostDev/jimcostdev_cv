@@ -19,7 +19,7 @@ function calcularTiempoTranscurrido() {
 
     // Determinamos si mostrar "mos." o "yr" para cada elemento
     let tiempoTexto1;
-    if (mesesTranscurridos1 > 24) {
+    if (mesesTranscurridos1 > 12) {
         const aniosTranscurridos1 = Math.floor(mesesTranscurridos1 / 12);
         tiempoTexto1 = `${aniosTranscurridos1} yr`;
     } else {
@@ -27,7 +27,7 @@ function calcularTiempoTranscurrido() {
     }
 
     let tiempoTexto2;
-    if (mesesTranscurridos2 > 24) {
+    if (mesesTranscurridos2 > 12) {
         const aniosTranscurridos2 = Math.floor(mesesTranscurridos2 / 12);
         tiempoTexto2 = `${aniosTranscurridos2} yr`;
     } else {
