@@ -4,18 +4,18 @@
       "telefono": "(+34) 624 49 9125",
       "direccion": "Alcúdia, Spain",
       "email": "jimcostdev@gmail.com",
-      "sitioWeb": "https://www.jimcostdev.com"
+      "sitioWeb": "jimcostdev.com"
     },
     "redesSociales": {
       "github": "@JimcostDev",
       "instagram": "@jimcostdev",
       "linkedin": "@ronaldo-jimenez",
-      "platzi": "@platzi"
+      "platzi": "Platzi: @JimcostDev"
     },
-    "idiomas": [
-      "Spanish - Native",
-      "English - B1"
-    ],
+    "idiomas": {
+      "espanol": "Spanish - Native",
+      "ingles": "English - Intermediate"
+    },
     "perfil": {
       "nombre": "RONALDO JIMÉNEZ ACOSTA",
       "rol": "Computer Engineer - Software Developer",
@@ -34,16 +34,21 @@
           "Management educational platforms (Office 365 and G-Suite).",
           "Development and deployment of the institution's graduate platform (.NET and Javascript).",
           "Creation of the payment web portal (Beta)."
-        ]
+        ],
+        "fecha": "April 2021 - March 2022 | "
       },
       {
         "cargo": "Academic Tutor and Programming Instructor",
+        "empresa": "Freelance",
+        "ubicacion": "Remote",
+        "industria": "Higher education, B2C",
         "actividades": [
           "Classes and tutorials on programming and software development, including fundamentals of programming, Python, Javascript, and C#."
-        ]
+        ],
+        "fecha": "October 2022 - Present | "
       }
     ],
-    "educacion": [
+    "infoEducacion": [
       {
         "institucion": "International University of La Rioja - UNIR",
         "carrera": "Computer engineering - Currently"

@@ -1,7 +1,4 @@
-function calcularTiempoTranscurrido() {
-    // Obtenemos los elementos donde se mostrará el tiempo
-    const $tiempo1 = document.getElementById('time1');
-    const $tiempo2 = document.getElementById('time2');
+export function calcularTiempoTranscurrido() {
 
     // Calculamos el tiempo transcurrido para cada elemento
     const fechaInicio1 = new Date('April 2021');
@@ -29,9 +26,5 @@ function calcularTiempoTranscurrido() {
         tiempoTexto2 = `${mesesTranscurridos2} mos.`;
     }
 
-    // Mostramos el tiempo transcurrido en cada elemento
-    $tiempo1.textContent = tiempoTexto1;
-    $tiempo2.textContent = tiempoTexto2;
+    return { tiempoTexto1, tiempoTexto2 };
 }
-
-export default calcularTiempoTranscurrido;
