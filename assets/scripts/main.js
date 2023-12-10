@@ -38,31 +38,26 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
             // WEB
             const webElement = document.getElementById('web-user')
-            if (webElement){
-                webElement.textContent = data.contacto.sitioWeb;
-            }
+            webElement.href = data.contacto.sitioWeb.url;
+            webElement.textContent = data.contacto.sitioWeb.nombre;
 
             //*********** SOCIAL NETWORKS ************** */
             // GITHUB
             const githubElement = document.getElementById('github-user')
-            if (githubElement){
-                githubElement.textContent = data.redesSociales.github;
-            }
+            githubElement.href = data.redesSociales.github.url;
+            githubElement.textContent = data.redesSociales.github.nombre;
             //INSTAGRAM
             const instagramElement = document.getElementById('instagram-user')
-            if (instagramElement){
-                instagramElement.textContent = data.redesSociales.instagram;
-            }
+            instagramElement.href = data.redesSociales.instagram.url;
+            instagramElement.textContent = data.redesSociales.instagram.nombre;
             //LINKEDIN
             const linkedinElement = document.getElementById('linkedin-user')
-            if (linkedinElement){
-                linkedinElement.textContent = data.redesSociales.linkedin;
-            }
+            linkedinElement.href = data.redesSociales.linkedin.url;
+            linkedinElement.textContent = data.redesSociales.linkedin.nombre;
             //PLATZI
             const platziElement = document.getElementById('platzi-user')
-            if (platziElement){
-                platziElement.textContent = data.redesSociales.platzi;
-            }
+            platziElement.href = data.redesSociales.platzi.url;
+            platziElement.textContent = data.redesSociales.platzi.nombre;
 
             //*********** LANGUAGES ************** */
             // ESPAÑOL

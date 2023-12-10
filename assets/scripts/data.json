@@ -4,13 +4,28 @@
       "telefono": "(+34) 624 49 9125",
       "direccion": "Alcúdia, Spain",
       "email": "jimcostdev@gmail.com",
-      "sitioWeb": "jimcostdev.com"
+      "sitioWeb": {
+        "url":"https://www.jimcostdev.com",
+        "nombre": "jimcostdev.com"
+      }
     },
     "redesSociales": {
-      "github": "@JimcostDev",
-      "instagram": "@jimcostdev",
-      "linkedin": "@ronaldo-jimenez",
-      "platzi": "Platzi: @JimcostDev"
+      "github":{
+        "url":"https://github.com/JimcostDev",
+        "nombre": "@JimcostDev"
+      },
+      "instagram": {
+        "url":"https://www.instagram.com/jimcostdev",
+        "nombre": "@jimcostdev"
+      },
+      "linkedin": {
+        "url":"https://www.linkedin.com/in/ronaldo-jimenez",
+        "nombre": "@ronaldo-jimenez"
+      },
+      "platzi": {
+        "url":"https://platzi.com/p/JimcostDev/",
+        "nombre": "@JimcostDev"
+      }
     },
     "idiomas": {
       "espanol": "Spanish - Native",
