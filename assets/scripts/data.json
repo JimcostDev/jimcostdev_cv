@@ -1,0 +1,61 @@
+{
+    "contacto": {
+      "ciudad": "Cali, Colombia",
+      "telefono": "(+34) 624 49 9125",
+      "direccion": "Alcúdia, Spain",
+      "email": "jimcostdev@gmail.com",
+      "sitioWeb": "https://www.jimcostdev.com"
+    },
+    "redesSociales": {
+      "github": "@JimcostDev",
+      "instagram": "@jimcostdev",
+      "linkedin": "@ronaldo-jimenez",
+      "platzi": "@platzi"
+    },
+    "idiomas": [
+      "Spanish - Native",
+      "English - B1"
+    ],
+    "perfil": {
+      "nombre": "RONALDO JIMÉNEZ ACOSTA",
+      "rol": "Computer Engineer - Software Developer",
+      "descripcion": "I am a technology enthusiast in the final stage of my computer engineering studies. With over 2 years of experience in software development and technical support in the educational industry, I am ready to take on new challenges. I have collaborated in multidisciplinary teams, creating innovative and scalable technological solutions.\n\nI possess strong knowledge in web development using C#, Python, and Javascript. Additionally, I have experience in managing databases with Microsoft SQL Server and using version control tools like Git. My ability to teach and willingness to take on mentoring roles have been prominent in my career. I am communicative, collaborative, and resourceful, with a proactive attitude towards continuous learning.\n\nFurthermore, it is worth noting that I am certified by Microsoft in Azure Fundamentals. This certification demonstrates my knowledge and understanding of the fundamental concepts of Azure, including core services, architecture, security, and privacy in the Microsoft cloud."
+      
+    },
+    "experienciaLaboral": [
+      {
+        "cargo": "Backend Developer",
+        "empresa": "Utap",
+        "ubicacion": "Cali, Colombia",
+        "industria": "Higher education, B2C",
+        "actividades": [
+          "Building new functionalities into existing web/desktop applications (.NET and C#).",
+          "Database maintenance (SQL Server).",
+          "Management educational platforms (Office 365 and G-Suite).",
+          "Development and deployment of the institution's graduate platform (.NET and Javascript).",
+          "Creation of the payment web portal (Beta)."
+        ]
+      },
+      {
+        "cargo": "Academic Tutor and Programming Instructor",
+        "actividades": [
+          "Classes and tutorials on programming and software development, including fundamentals of programming, Python, Javascript, and C#."
+        ]
+      }
+    ],
+    "educacion": [
+      {
+        "institucion": "International University of La Rioja - UNIR",
+        "carrera": "Computer engineering - Currently"
+      },
+      {
+        "certificacion": "Microsoft Certified",
+        "curso": "Azure Fundamentals"
+      },
+      {
+        "institucion": "Autonomous Technological Foundation of the Pacific - UTAP",
+        "titulo": "Computer systems development technologist"
+      }
+    ]
+  }
+  
