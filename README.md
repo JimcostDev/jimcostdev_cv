@@ -46,7 +46,7 @@ Este es mi proyecto de CV desarrollado con **HTML, CSS (Sass), Git y JavaScript*
 
 ## Licencia
 
-Este proyecto está bajo la Licencia MIT. Puedes ver más detalles en el archivo [LICENSE](link a tu archivo LICENSE).
+Este proyecto está bajo la Licencia MIT. Puedes ver más detalles en el archivo [LICENSE](https://github.com/JimcostDev/CV_JimcostDev/blob/master/LICENSE).
 
 ---
 
