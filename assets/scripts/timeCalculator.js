@@ -1,30 +1,22 @@
-export function calcularTiempoTranscurrido() {
+export function calcularTiempoTranscurrido(fechaInicio, fechaFinal) {
+    const fechaInicioObj = new Date(fechaInicio);
+    let fechaFinalObj;
 
-    // Calculamos el tiempo transcurrido para cada elemento
-    const fechaInicio1 = new Date('April 2021');
-    const fechaActual1 = new Date('March 2022');
-    const mesesTranscurridos1 = (fechaActual1.getFullYear() - fechaInicio1.getFullYear()) * 12 + (fechaActual1.getMonth() - fechaInicio1.getMonth());
-
-    const fechaInicio2 = new Date('October 2022');
-    const fechaActual2 = new Date();
-    const mesesTranscurridos2 = (fechaActual2.getFullYear() - fechaInicio2.getFullYear()) * 12 + (fechaActual2.getMonth() - fechaInicio2.getMonth());
-
-    // Determinamos si mostrar "mos." o "yr" para cada elemento
-    let tiempoTexto1;
-    if (mesesTranscurridos1 > 12) {
-        const aniosTranscurridos1 = Math.floor(mesesTranscurridos1 / 12);
-        tiempoTexto1 = `${aniosTranscurridos1} yr`;
+    if (fechaFinal.toLowerCase() === 'currently') {
+        fechaFinalObj = new Date();
     } else {
-        tiempoTexto1 = `${mesesTranscurridos1} mos.`;
+        fechaFinalObj = new Date(fechaFinal);
     }
 
-    let tiempoTexto2;
-    if (mesesTranscurridos2 > 12) {
-        const aniosTranscurridos2 = Math.floor(mesesTranscurridos2 / 12);
-        tiempoTexto2 = `${aniosTranscurridos2} yr`;
+    const mesesTranscurridos = (fechaFinalObj.getFullYear() - fechaInicioObj.getFullYear()) * 12 + (fechaFinalObj.getMonth() - fechaInicioObj.getMonth());
+
+    let tiempo;
+    if (mesesTranscurridos > 12) {
+        const aniosTranscurridos = Math.floor(mesesTranscurridos / 12);
+        tiempo = `${aniosTranscurridos} yr`;
     } else {
-        tiempoTexto2 = `${mesesTranscurridos2} mos.`;
+        tiempo = `${mesesTranscurridos} mos.`;
     }
 
-    return { tiempoTexto1, tiempoTexto2 };
+    return tiempo;
 }

@@ -4,12 +4,7 @@ import {cargarDatos} from './loadData.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
     generarPDF();
-    calcularTiempoTranscurrido();
-
-    // Obtener tiempos transcurridos
-    const { tiempoTexto1, tiempoTexto2 } = calcularTiempoTranscurrido();
-
-
+    
     // lecrura de los datos
     try {
         const data = await cargarDatos();
@@ -91,10 +86,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             data.experienciaLaboral.forEach((experiencia, index) => {
                 const posicionElement = document.getElementById(`work${index + 1}`);
                 if (posicionElement) {
+                    const tiempo = calcularTiempoTranscurrido(experiencia.fechaInicio, experiencia.fechaFin);
                     let html = `<h3 class="rol mb">${experiencia.cargo} - ${experiencia.empresa} [${experiencia.ubicacion}] [${experiencia.industria}]</h3>`;
                     html += experiencia.actividades.map(act => `<p>${act}</p>`).join('');
-                    html += `<span class="bold">${experiencia.fecha}</span>`; // Mostrar la fecha primero
-                    html += `<span class="bold">${index === 0 ? tiempoTexto1 : tiempoTexto2}</span>`; // Luego, mostrar el tiempo
+                    html += `<span class="bold">${experiencia.fechaInicio} - ${experiencia.fechaFin === 'currently' ? 'Currently' : experiencia.fechaFin} | ${tiempo}</span>`;
             
                     posicionElement.innerHTML = html;
                 }

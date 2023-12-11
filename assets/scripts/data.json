@@ -50,7 +50,8 @@
           "Development and deployment of the institution's graduate platform (.NET and Javascript).",
           "Creation of the payment web portal (Beta)."
         ],
-        "fecha": "April 2021 - March 2022 | "
+        "fechaInicio": "April 2021",
+        "fechaFin": "March 2022"
       },
       {
         "cargo": "Academic Tutor and Programming Instructor",
@@ -60,7 +61,8 @@
         "actividades": [
           "Classes and tutorials on programming and software development, including fundamentals of programming, Python, Javascript, and C#."
         ],
-        "fecha": "October 2022 - Present | "
+        "fechaInicio": "October 2022",
+        "fechaFin": "currently"
       }
     ],
     "infoEducacion": [
