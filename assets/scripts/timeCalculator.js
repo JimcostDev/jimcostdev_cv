@@ -15,11 +15,11 @@ export function calcularTiempoTranscurrido(fechaInicio, fechaFinal) {
     let tiempo;
 
     if (aniosTranscurridos === 0) {
-        tiempo = `${mesesRestantes} mos.`;
+        tiempo = `${mesesRestantes} mos`;
     } else {
-        tiempo = `${aniosTranscurridos} yrs.`;
+        tiempo = `${aniosTranscurridos} yrs`;
         if (mesesRestantes > 0) {
-            tiempo += ` and ${mesesRestantes} mos.`;
+            tiempo += ` and ${mesesRestantes} mos`;
         }
     }
 
