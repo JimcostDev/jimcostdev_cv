@@ -1,4 +1,4 @@
-/**************** ESTUDIOS Y EXPERIENCIA LABORAL **************************
+/**************** ESTUDIOS Y EXPERIENCIA LABORAL **************************/
 .contenedor 
   .principal
     display: flex
@@ -15,27 +15,42 @@
           &:hover
             color: $color-principal
 
-/********************** BOTON **************************
+/********************** BOTONES **************************/
 
-.descargar
+.botones
   margin: 10px auto
   width: 860px
   display: flex
-  flex-direction: column
-  flex-wrap: wrap
-  align-content: flex-start
-
+  justify-content: space-between 
+  align-items: center 
+  
   .btn-descargar
-    display: block
-    margin: auto
-    padding: 12px
+    padding: 12px 24px
     background-color: $color-terciario
     cursor: pointer
     border: none
-    border-radius: 2px
-    width: 20%
+    border-radius: 4px
     color: $color-principal
+    font-size: 16px
+    transition: background-color 0.3s ease
 
     &:hover
-      background-color: #000a1a
-  
+      background-color: darken($color-terciario, 10%)
+
+  .idiomas
+    display: flex
+    align-items: center 
+    gap: 10px 
+
+    .btn-idiomas
+      padding: 8px 16px
+      background-color: $color-terciario
+      color: $color-principal
+      cursor: pointer
+      border: none
+      border-radius: 4px
+      font-size: 14px
+      transition: background-color 0.3s ease
+
+      &:hover
+        background-color: darken($color-terciario, 10%)

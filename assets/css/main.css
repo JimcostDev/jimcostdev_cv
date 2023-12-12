@@ -2,6 +2,8 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -89,7 +91,7 @@ body {
   text-decoration: underline;
 }
 
-/**************** ESTUDIOS Y EXPERIENCIA LABORAL ************************** */
+/**************** ESTUDIOS Y EXPERIENCIA LABORAL **************************/
 .contenedor .principal {
   display: flex;
   align-items: flex-end;
@@ -106,26 +108,44 @@ body {
   color: #f7cd00;
 }
 
-/********************** BOTON ************************** */
-.descargar {
+/********************** BOTONES **************************/
+.botones {
   margin: 10px auto;
   width: 860px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
 }
-.descargar .btn-descargar {
-  display: block;
-  margin: auto;
-  padding: 12px;
+.botones .btn-descargar {
+  padding: 12px 24px;
   background-color: #001028;
   cursor: pointer;
   border: none;
-  border-radius: 2px;
-  width: 20%;
+  border-radius: 4px;
   color: #f7cd00;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
-.descargar .btn-descargar:hover {
-  background-color: #000a1a;
-}/*# sourceMappingURL=main.css.map */
+.botones .btn-descargar:hover {
+  background-color: black;
+}
+.botones .idiomas {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.botones .idiomas .btn-idiomas {
+  padding: 8px 16px;
+  background-color: #001028;
+  color: #f7cd00;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+.botones .idiomas .btn-idiomas:hover {
+  background-color: black;
+}
+
+/*# sourceMappingURL=main.css.map */
