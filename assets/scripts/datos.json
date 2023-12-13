@@ -1,0 +1,92 @@
+{
+    "contacto": {
+      "titulo": "CONTACTO",
+      "ciudad": "Cali, Colombia",
+      "telefono": "(+34) 624 49 9125",
+      "direccion": "Alcúdia, España",
+      "email": "jimcostdev@gmail.com",
+      "sitioWeb": {
+        "url":"https://www.jimcostdev.com",
+        "nombre": "jimcostdev.com"
+      }
+    },
+    "redesSociales": {
+      "titulo": "REDES SOCIALES",
+      "github":{
+        "url":"https://github.com/JimcostDev",
+        "nombre": "@JimcostDev"
+      },
+      "instagram": {
+        "url":"https://www.instagram.com/jimcostdev",
+        "nombre": "@jimcostdev"
+      },
+      "linkedin": {
+        "url":"https://www.linkedin.com/in/ronaldo-jimenez",
+        "nombre": "@ronaldo-jimenez"
+      },
+      "platzi": {
+        "url":"https://platzi.com/p/JimcostDev/",
+        "nombre": "platzi - JimcostDev"
+      }
+    },
+    "idiomas": {
+      "titulo": "IDIOMAS",
+      "espanol": "Español - Nativo",
+      "ingles": "Ingles - Intermedio"
+    },
+    "perfil": {
+      "nombre": "RONALDO JIMÉNEZ ACOSTA",
+      "rol": "Ingeniero informático - Desarrollador de Software",
+      "descripcion": "Soy un apasionado de la tecnología en la etapa final de mis estudios de ingeniería informática. Con más de 2 años de experiencia en desarrollo de software y soporte técnico en la industria educativa, estoy preparado para enfrentar nuevos desafíos. He colaborado en equipos multidisciplinarios, creando soluciones tecnológicas innovadoras y escalables. Poseo sólidos conocimientos en desarrollo web utilizando C#, Python y Javascript. Además, tengo experiencia en la gestión de bases de datos con Microsoft SQL Server y en el uso de herramientas de control de versiones como Git. Mi habilidad para enseñar y mi disposición para asumir roles de mentoría destacan en mi carrera. Soy comunicativo, colaborativo y resolutivo, con una actitud proactiva hacia el aprendizaje continuo. Además, cabe destacar que estoy certificado por Microsoft en Azure Fundamentals. Esta certificación demuestra mi conocimiento y comprensión de los conceptos fundamentales de Azure, incluyendo los servicios principales, la arquitectura, la seguridad y la privacidad en la nube de Microsoft."
+      
+    },
+    "experienciaLaboral": {
+    "titulo": "EXPERIENCIA LABORAL RECIENTE",
+    "historial": [
+      {
+        "cargo": "Desarrollador Backend",
+        "empresa": "Utap",
+        "ubicacion": "Cali, Colombia",
+        "industria": "Educación Superior, B2C",
+        "actividades": [
+          " - Desarrolle nuevas funcionalidades en las aplicaciones web/escritorio existentes (.Net y C#).",
+          " - Mantenimiento de la base de datos (SQL Server).",
+          " - Administración de las plataformas educativas (Office 365 y G-Suite).",
+          " - Colabore en el desarrollo y despliegue de la plataforma de egresados de la institución (.NET and Javascript).",
+          " - Creación del portal web de pagos (Beta)."
+        ],
+        "fechaInicio": "April 2021",
+        "fechaFin": "March 2022"
+      },
+      {
+        "cargo": "Docente de Programación",
+        "empresa": "Freelance",
+        "ubicacion": "Remoto",
+        "industria": "Educación Superior, B2C",
+        "actividades": [
+          "Clases y tutoriales sobre programación y desarrollo de software, incluidos fundamentos de programación, Python, Javascript y C#."
+        ],
+        "fechaInicio": "October 2022",
+        "fechaFin": "currently"
+      }
+    ]
+  },
+  "infoEducacion": {
+    "titulo": "EDUCACIÓN",
+    "historial": [
+      {
+        "institucion": "Universidad Internacional de La Rioja - UNIR",
+        "carrera": "Ingeniería informática - Actualmente"
+      },
+      {
+        "certificacion": "Certificación Microsoft",
+        "curso": "Azure Fundamentals"
+      },
+      {
+        "institucion": "Fundación Tecnológica Autónoma del Pacífico - UTAP",
+        "titulo": "Tecnólogo en Desarrollo de sistemas informáticos"
+      }
+    ]
+  }
+}
+    

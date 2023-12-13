@@ -1,8 +1,9 @@
 {
     "contacto": {
+      "titulo": "CONTACT",
       "ciudad": "Cali, Colombia",
       "telefono": "(+34) 624 49 9125",
-      "direccion": "Alcúdia, Spain",
+      "direccion": "Alcudia, Spain",
       "email": "jimcostdev@gmail.com",
       "sitioWeb": {
         "url":"https://www.jimcostdev.com",
@@ -10,6 +11,7 @@
       }
     },
     "redesSociales": {
+      "titulo": "SOCIAL NETWORKS",
       "github":{
         "url":"https://github.com/JimcostDev",
         "nombre": "@JimcostDev"
@@ -28,6 +30,7 @@
       }
     },
     "idiomas": {
+      "titulo": "LANGUAGES",
       "espanol": "Spanish - Native",
       "ingles": "English - Intermediate"
     },
@@ -37,18 +40,20 @@
       "descripcion": "I am a technology enthusiast in the final stage of my computer engineering studies. With over 2 years of experience in software development and technical support in the educational industry, I am ready to take on new challenges. I have collaborated in multidisciplinary teams, creating innovative and scalable technological solutions.\n\nI possess strong knowledge in web development using C#, Python, and Javascript. Additionally, I have experience in managing databases with Microsoft SQL Server and using version control tools like Git. My ability to teach and willingness to take on mentoring roles have been prominent in my career. I am communicative, collaborative, and resourceful, with a proactive attitude towards continuous learning.\n\nFurthermore, it is worth noting that I am certified by Microsoft in Azure Fundamentals. This certification demonstrates my knowledge and understanding of the fundamental concepts of Azure, including core services, architecture, security, and privacy in the Microsoft cloud."
       
     },
-    "experienciaLaboral": [
+    "experienciaLaboral": {
+    "titulo": "MOST RECENT WORK EXPERIENCE",
+    "historial": [
       {
         "cargo": "Backend Developer",
         "empresa": "Utap",
         "ubicacion": "Cali, Colombia",
         "industria": "Higher education, B2C",
         "actividades": [
-          "Building new functionalities into existing web/desktop applications (.NET and C#).",
-          "Database maintenance (SQL Server).",
-          "Management educational platforms (Office 365 and G-Suite).",
-          "Development and deployment of the institution's graduate platform (.NET and Javascript).",
-          "Creation of the payment web portal (Beta)."
+          " - Building new functionalities into existing web/desktop applications (.NET and C#).",
+          " - Database maintenance (SQL Server).",
+          " - Management educational platforms (Office 365 and G-Suite).",
+          " - Development and deployment of the institution's graduate platform (.NET and Javascript).",
+          " - Creation of the payment web portal (Beta)."
         ],
         "fechaInicio": "April 2021",
         "fechaFin": "March 2022"
@@ -64,8 +69,11 @@
         "fechaInicio": "October 2022",
         "fechaFin": "currently"
       }
-    ],
-    "infoEducacion": [
+    ]
+  },
+  "infoEducacion": {
+    "titulo": "EDUCATION",
+    "historial": [
       {
         "institucion": "International University of La Rioja - UNIR",
         "carrera": "Computer engineering - Currently"
@@ -80,4 +88,5 @@
       }
     ]
   }
-  
+}
+    
