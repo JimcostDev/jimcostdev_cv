@@ -29,7 +29,7 @@ body {
   text-transform: uppercase;
 }
 .contenedor .linea {
-  border: 1px solid #001028;
+  border: 1px solid #00FF00;
   width: 100%;
   margin-bottom: 10px;
 }
@@ -37,12 +37,12 @@ body {
   font-size: 20px;
 }
 .contenedor .principal .linea-principal {
-  border: 1px solid #f7cd00;
+  border: 1px solid #00FF00;
   width: 30%;
 }
 .contenedor .bold {
   font-weight: 600;
-  color: #001028;
+  color: #00142E;
 }
 .contenedor .mb {
   margin-bottom: 5px;
@@ -53,7 +53,7 @@ body {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  background: #f7cd00;
+  background: #00142E;
   padding: 40px;
   width: 30%;
 }
@@ -69,23 +69,35 @@ body {
 }
 .contenedor .contacto p {
   margin-bottom: 5px;
+  color: #fdfbfb;
+}
+.contenedor .contacto .titulo {
+  color: #fdfbfb;
 }
 .contenedor .redes-sociales {
   margin-bottom: 20px;
 }
 .contenedor .redes-sociales p {
   margin-bottom: 5px;
+  color: #fdfbfb;
+}
+.contenedor .redes-sociales .titulo {
+  color: #fdfbfb;
 }
 .contenedor .languages {
   margin-bottom: 20px;
 }
 .contenedor .languages p {
   margin-bottom: 5px;
+  color: #fdfbfb;
+}
+.contenedor .languages .titulo {
+  color: #fdfbfb;
 }
 .contenedor aside a {
   text-decoration: none;
   display: inline-block;
-  color: #001028;
+  color: #fdfbfb;
 }
 .contenedor aside a:hover {
   text-decoration: underline;
@@ -102,10 +114,10 @@ body {
 }
 .contenedor .principal .experiencia-laboral .descripcion a {
   text-decoration: none;
-  color: #001028;
+  color: #00FF00;
 }
 .contenedor .principal .experiencia-laboral .descripcion a:hover {
-  color: #f7cd00;
+  color: #00142E;
 }
 
 /********************** BOTONES **************************/
@@ -118,16 +130,16 @@ body {
 }
 .botones .btn-descargar {
   padding: 12px 24px;
-  background-color: #001028;
+  background-color: #00FF00;
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  color: #f7cd00;
+  color: #00142E;
   font-size: 16px;
   transition: background-color 0.3s ease;
 }
 .botones .btn-descargar:hover {
-  background-color: black;
+  background-color: #00cc00;
 }
 .botones .idiomas {
   display: flex;
@@ -136,8 +148,8 @@ body {
 }
 .botones .idiomas .btn-idiomas {
   padding: 8px 16px;
-  background-color: #001028;
-  color: #f7cd00;
+  background-color: #00FF00;
+  color: #00142E;
   cursor: pointer;
   border: none;
   border-radius: 4px;
@@ -145,7 +157,7 @@ body {
   transition: background-color 0.3s ease;
 }
 .botones .idiomas .btn-idiomas:hover {
-  background-color: black;
+  background-color: #00cc00;
 }
 
 /*# sourceMappingURL=main.css.map */
