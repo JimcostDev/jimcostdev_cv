@@ -44,6 +44,18 @@
     "titulo": "EXPERIENCIA LABORAL RECIENTE",
     "historial": [
       {
+        "cargo": "Docente de Programación y Desarrollador Freelance",
+        "empresa": "Freelance",
+        "ubicacion": "Remoto",
+        "industria": "Educación Superior, B2C",
+        "actividades": [
+          " - Clases y tutoriales sobre programación y desarrollo de software con Python, Javascript y C#.",
+          " - Desarrollo de APIs con Python y FastAPI."
+        ],
+        "fechaInicio": "October 2022",
+        "fechaFin": "currently"
+      },
+      {
         "cargo": "Desarrollador Backend",
         "empresa": "Utap",
         "ubicacion": "Cali, Colombia",
@@ -57,18 +69,7 @@
         ],
         "fechaInicio": "April 2021",
         "fechaFin": "March 2022"
-      },
-      {
-        "cargo": "Docente de Programación",
-        "empresa": "Freelance",
-        "ubicacion": "Remoto",
-        "industria": "Educación Superior, B2C",
-        "actividades": [
-          "Clases y tutoriales sobre programación y desarrollo de software, incluidos fundamentos de programación, Python, Javascript y C#."
-        ],
-        "fechaInicio": "October 2022",
-        "fechaFin": "currently"
-      }
+      }  
     ]
   },
   "infoEducacion": {

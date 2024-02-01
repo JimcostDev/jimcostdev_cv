@@ -44,6 +44,18 @@
     "titulo": "MOST RECENT WORK EXPERIENCE",
     "historial": [
       {
+        "cargo": "Programming Teacher and Freelance Developer",
+        "empresa": "Freelance",
+        "ubicacion": "Remote",
+        "industria": "Higher education, B2C",
+        "actividades": [
+          " - Classes and tutorials on programming and software development with Python, Javascript, and C#.", 
+          " - API development with Python and FastAPI."
+        ],
+        "fechaInicio": "October 2022",
+        "fechaFin": "currently"
+      },
+      {
         "cargo": "Backend Developer",
         "empresa": "Utap",
         "ubicacion": "Cali, Colombia",
@@ -57,17 +69,6 @@
         ],
         "fechaInicio": "April 2021",
         "fechaFin": "March 2022"
-      },
-      {
-        "cargo": "Academic Tutor and Programming Instructor",
-        "empresa": "Freelance",
-        "ubicacion": "Remote",
-        "industria": "Higher education, B2C",
-        "actividades": [
-          "Classes and tutorials on programming and software development, including fundamentals of programming, Python, Javascript, and C#."
-        ],
-        "fechaInicio": "October 2022",
-        "fechaFin": "currently"
       }
     ]
   },
