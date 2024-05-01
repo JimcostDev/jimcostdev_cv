@@ -38,16 +38,5 @@ document.addEventListener('DOMContentLoaded', async () => {
             console.error('Error al cargar los datos:', error);
         }
     }
-
-    // Cargar los datos iniciales al cargar la página
-    await actualizarDatos('ingles'); // Cambia 'ingles' por el idioma inicial que desees mostrar
-
-    // Manejar el clic en los botones para cambiar el idioma
-    document.getElementById('btn-english').addEventListener('click', async () => {
-        await actualizarDatos('ingles');
-    });
-
-    document.getElementById('btn-spanish').addEventListener('click', async () => {
-        await actualizarDatos('espanol');
-    });
+actualizarDatos(); 
 });
