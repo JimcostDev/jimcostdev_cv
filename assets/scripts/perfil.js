@@ -1,16 +1,23 @@
-export async function actualizarPerfil(perfilData) {
-    // NOMBRE
-    const nombreDelUsuario = perfilData.nombre;
-    const nombreElement = document.getElementById('nombre-usuario');
-    nombreElement.textContent = nombreDelUsuario;
-    // ROL
-    const rolElement = document.getElementById('rol-user')
-    if (rolElement){
-        rolElement.textContent = perfilData.rol;
-     }
-    // DESCRIPCIÓN
-    const descriptionElement = document.getElementById('descripcion-user')
-    if (descriptionElement){
-        descriptionElement.textContent = perfilData.descripcion;
+export async function actualizarPerfil(datosPerfil) {
+    //*********** PERFIL ************** */
+    const rolElement = document.getElementById('rol');
+    if (rolElement) {
+        rolElement.textContent = datosPerfil.rol;
+    }
+
+    const descripcionElement = document.getElementById('descripcion');
+    if (descripcionElement) {
+        descripcionElement.textContent = datosPerfil.description;
+    }
+
+    const skillsElement = document.getElementById('skills');
+    if (skillsElement) {
+        skillsElement.textContent = datosPerfil.skills.join(', ');
+    }
+
+    const avatarElement = document.getElementById('avatar');
+    if (avatarElement) {
+        avatarElement.src = datosPerfil.avatar;
+        avatarElement.alt = 'Foto de perfil de ' + datosPerfil.username;
     }
 }

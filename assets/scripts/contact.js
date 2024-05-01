@@ -1,31 +1,22 @@
 export async function actualizarContacto(contactoData) {
-    //TITULO
-    const tituloElement = document.getElementById('titulo-contacto');
-    if (tituloElement) {
-        tituloElement.textContent = contactoData.titulo;
+    // NACIONALIDAD
+    const nacionalidadElement = document.getElementById('nacionalidad');
+    if (nacionalidadElement) {
+        nacionalidadElement.textContent = contactoData.nationality;
     }
-    //CIUDAD
-    const ciudadUsuarioElement = document.getElementById('ciudad-usuario');
-    if (ciudadUsuarioElement) {
-        ciudadUsuarioElement.textContent = contactoData.ciudad;
+    // TELEFONO
+    const telefonoElement = document.getElementById('telefono');
+    if (telefonoElement) {
+        telefonoElement.textContent = contactoData.phone_number;
     }
-    //WHATSAPP
-    const numeroWhatsappElement = document.getElementById('numero-whatsapp');
-    if (numeroWhatsappElement) {
-        numeroWhatsappElement.textContent = contactoData.telefono;
+    // CIUDAD
+    const ciudadElement = document.getElementById('ciudad');
+    if (ciudadElement) {
+        ciudadElement.textContent = contactoData.i_live_in;
     }
-    //UBICACIÓN
-    const ubicacionUsuarioElement = document.getElementById('ubicacion-user');
-    if (ubicacionUsuarioElement) {
-        ubicacionUsuarioElement.textContent = contactoData.direccion;
-    }
-    //EMAIL
-    const emailElement = document.getElementById('email-user')
-    if (emailElement){
+    // EMAIL
+    const emailElement = document.getElementById('email');
+    if (emailElement) {
         emailElement.textContent = contactoData.email;
     }
-    // WEB
-    const webElement = document.getElementById('web-user')
-    webElement.href = contactoData.sitioWeb.url;
-    webElement.textContent = contactoData.sitioWeb.nombre;
 }

@@ -29,7 +29,7 @@ body {
   text-transform: uppercase;
 }
 .contenedor .linea {
-  border: 1px solid #00FF00;
+  border: 1px solid #03A9F4;
   width: 100%;
   margin-bottom: 10px;
 }
@@ -37,7 +37,7 @@ body {
   font-size: 20px;
 }
 .contenedor .principal .linea-principal {
-  border: 1px solid #00FF00;
+  border: 1px solid #03A9F4;
   width: 30%;
 }
 .contenedor .bold {
@@ -69,35 +69,35 @@ body {
 }
 .contenedor .contacto p {
   margin-bottom: 5px;
-  color: #fdfbfb;
+  color: #F2FBFF;
 }
 .contenedor .contacto .titulo {
-  color: #fdfbfb;
+  color: #F2FBFF;
 }
 .contenedor .redes-sociales {
   margin-bottom: 20px;
 }
 .contenedor .redes-sociales p {
   margin-bottom: 5px;
-  color: #fdfbfb;
+  color: #F2FBFF;
 }
 .contenedor .redes-sociales .titulo {
-  color: #fdfbfb;
+  color: #F2FBFF;
 }
-.contenedor .languages {
+.contenedor .skills {
   margin-bottom: 20px;
 }
-.contenedor .languages p {
+.contenedor .skills p {
   margin-bottom: 5px;
-  color: #fdfbfb;
+  color: #F2FBFF;
 }
-.contenedor .languages .titulo {
-  color: #fdfbfb;
+.contenedor .skills .titulo {
+  color: #F2FBFF;
 }
 .contenedor aside a {
   text-decoration: none;
   display: inline-block;
-  color: #fdfbfb;
+  color: #F2FBFF;
 }
 .contenedor aside a:hover {
   text-decoration: underline;
@@ -107,16 +107,32 @@ body {
 .contenedor .principal {
   display: flex;
   align-items: flex-end;
-  background: #fdfbfb;
+  background: #F2FBFF;
   flex-direction: column;
   width: 70%;
   padding: 60px;
 }
+.contenedor .principal .experiencia-laboral .experiencia-ubicacion, .contenedor .principal .experiencia-laboral .experiencia-duracion {
+  color: #03A9F4;
+  font-size: 0.8rem;
+}
 .contenedor .principal .experiencia-laboral .descripcion a {
   text-decoration: none;
-  color: #00FF00;
+  color: #03A9F4;
 }
 .contenedor .principal .experiencia-laboral .descripcion a:hover {
+  color: #00142E;
+}
+.contenedor .principal .educacion .educacion-year {
+  color: #03A9F4;
+  font-size: 0.8rem;
+}
+.contenedor .principal .certificacion .ver-texto {
+  color: #03A9F4;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+.contenedor .principal .certificacion .ver-texto:hover {
   color: #00142E;
 }
 
@@ -125,39 +141,22 @@ body {
   margin: 10px auto;
   width: 860px;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
 }
 .botones .btn-descargar {
   padding: 12px 24px;
-  background-color: #00FF00;
+  background-color: #03A9F4;
   cursor: pointer;
   border: none;
   border-radius: 4px;
   color: #00142E;
-  font-size: 16px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
   transition: background-color 0.3s ease;
 }
 .botones .btn-descargar:hover {
-  background-color: #00cc00;
-}
-.botones .idiomas {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.botones .idiomas .btn-idiomas {
-  padding: 8px 16px;
-  background-color: #00FF00;
-  color: #00142E;
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
-  font-size: 14px;
-  transition: background-color 0.3s ease;
-}
-.botones .idiomas .btn-idiomas:hover {
-  background-color: #00cc00;
+  background-color: #0286c2;
 }
 
 /*# sourceMappingURL=main.css.map */

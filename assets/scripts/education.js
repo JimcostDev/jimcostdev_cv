@@ -1,40 +1,35 @@
 export async function actualizarEducacion(educacionData) {
-     // TITULO
-     const tituloEduElement = document.getElementById('titulo-educacion');
-     if (tituloEduElement) {
-         tituloEduElement.textContent = educacionData.titulo;
-     }
-     // EDUCACIÓN
-     const educacionElement = document.querySelector('.infoEducacion');
-     if (educacionElement) {
-         const educacionHTML = educacionData.historial.map(item => {
-             if ('carrera' in item) {
-                 return `
-                     <div class="descripcion mb">
-                         <h3 class="rol">${item.institucion}</h3>
-                         <p><i>${item.carrera}</i></p>
-                     </div>
-                 `;
-             } else if ('curso' in item) {
-                 return `
-                     <div class="descripcion mb">
-                         <h3 class="rol">${item.certificacion}</h3>
-                         <p><i>${item.curso}</i></p>
-                     </div>
-                 `;
-             } else if ('titulo' in item) {
-                 return `
-                     <div class="descripcion mb">
-                         <h3 class="rol">${item.institucion}</h3>
-                         <p><i>${item.titulo}</i></p>
-                     </div>
-                 `;
-             }
-         }).join('');
+    //*********** EDUCACIÓN ************** */
+    const educacionContainer = document.getElementById('educacion');
+    if (educacionContainer) {
+        educacionContainer.innerHTML = ''; // Limpiar el contenido anterior
 
-         educacionElement.innerHTML = educacionHTML;
-     }
+        educacionData.forEach(educacion => {
+            const divEducacion = document.createElement('div');
+            divEducacion.classList.add('educacion-item');
+
+            // Título: Carrera
+            const tituloElement = document.createElement('h3');
+            tituloElement.textContent = educacion.career;
+            divEducacion.appendChild(tituloElement);
+
+            // Nombre de la universidad
+            const universidadElement = document.createElement('p');
+            universidadElement.textContent = educacion.company;
+            universidadElement.classList.add('educacion-universidad');
+            divEducacion.appendChild(universidadElement);
+
+            // Año de graduación
+            const yearElement = document.createElement('p');
+            yearElement.textContent = educacion.year;
+            yearElement.classList.add('educacion-year');
+            divEducacion.appendChild(yearElement);
+
+            // Separador
+            const separatorElement = document.createElement('br');
+            divEducacion.appendChild(separatorElement);
+
+            educacionContainer.appendChild(divEducacion);
+        });
+    }
 }
-
-
-           

@@ -1,24 +1,36 @@
 export async function actualizarRedesSociales(redesData) {
     //*********** SOCIAL NETWORKS ************** */
-            //TITULO
-            const tituloRedesElement = document.getElementById('titulo-redes');
-            if (tituloRedesElement) {
-                tituloRedesElement.textContent = redesData.titulo;
-            }
-            // GITHUB
-            const githubElement = document.getElementById('github-user')
-            githubElement.href = redesData.github.url;
-            githubElement.textContent = redesData.github.nombre;
-            //INSTAGRAM
-            const instagramElement = document.getElementById('instagram-user')
-            instagramElement.href = redesData.instagram.url;
-            instagramElement.textContent = redesData.instagram.nombre;
-            //LINKEDIN
-            const linkedinElement = document.getElementById('linkedin-user')
-            linkedinElement.href = redesData.linkedin.url;
-            linkedinElement.textContent = redesData.linkedin.nombre;
-            //PLATZI
-            const platziElement = document.getElementById('platzi-user')
-            platziElement.href = redesData.platzi.url;
-            platziElement.textContent = redesData.platzi.nombre;
+    redesData.forEach(redSocial => {
+        switch (redSocial.title) {
+            case 'github':
+                const githubElement = document.getElementById('github-user');
+                if (githubElement) {
+                    githubElement.href = redSocial.url;
+                    githubElement.textContent = 'GitHub';
+                }
+                break;
+            case 'linkedin':
+                const linkedinElement = document.getElementById('linkedin-user');
+                if (linkedinElement) {
+                    linkedinElement.href = redSocial.url;
+                    linkedinElement.textContent = 'LinkedIn';
+                }
+                break;
+            case 'youtube':
+                const youtubeElement = document.getElementById('youtube-user');
+                if (youtubeElement) {
+                    youtubeElement.href = redSocial.url;
+                    youtubeElement.textContent = 'YouTube';
+                }
+                break;
+            case 'web':
+                const webElement = document.getElementById('web-user');
+                if (webElement) {
+                    webElement.href = redSocial.url;
+                    webElement.textContent = 'jimcostdev.com';
+                }
+                break;
+            // Agrega más casos según sea necesario para otras redes sociales
+        }
+    });
 }

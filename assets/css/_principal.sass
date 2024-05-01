@@ -9,6 +9,9 @@
     padding: 60px
 
     .experiencia-laboral
+      .experiencia-ubicacion, .experiencia-duracion 
+        color: $color-terciario
+        font-size: 0.8rem
       .descripcion
         a
           text-decoration: none
@@ -16,7 +19,17 @@
           &:hover
             color: $color-principal
 
-    
+    .educacion
+      .educacion-year
+        color: $color-terciario
+        font-size: 0.8rem
+    .certificacion
+      .ver-texto
+        color: $color-terciario
+        font-size: 0.8rem
+        text-decoration: none
+        &:hover
+          color: $color-principal
       
 /********************** BOTONES **************************/
 
@@ -24,7 +37,7 @@
   margin: 10px auto
   width: 860px
   display: flex
-  justify-content: space-between 
+  justify-content: right
   align-items: center 
   
   .btn-descargar
@@ -34,26 +47,8 @@
     border: none
     border-radius: 4px
     color: $color-principal
-    font-size: 16px
+    font-size: 0.9rem
+    text-transform: uppercase
     transition: background-color 0.3s ease
-
     &:hover
       background-color: darken($color-terciario, 10%)
-
-  .idiomas
-    display: flex
-    align-items: center 
-    gap: 10px 
-
-    .btn-idiomas
-      padding: 8px 16px
-      background-color: $color-terciario
-      color: $color-principal
-      cursor: pointer
-      border: none
-      border-radius: 4px
-      font-size: 14px
-      transition: background-color 0.3s ease
-
-      &:hover
-        background-color: darken($color-terciario, 10%)
