@@ -3,10 +3,12 @@ function generarPDF() {
   const $boton = document.getElementById("btn-descargar");
   $boton.addEventListener("click", () => {
     const $elementoParaConvertir = document.getElementById("contenedor");
+    const fechaActual = new Date().toISOString().split('T')[0]; // Obtiene la fecha actual en formato ISO y obtiene solo la parte de la fecha
+    const nombreArchivo = `CV_JIMCOSTDEV_${fechaActual}.pdf`; 
     html2pdf()
       .set({
         margin: 1,
-        filename: "CV_JimcostDev_Web.pdf",
+        filename: nombreArchivo,
         image: {
           type: "jpeg",
           quality: 0.98,
