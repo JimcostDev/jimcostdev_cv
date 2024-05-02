@@ -10,8 +10,6 @@ import { actualizarCertificaciones } from './certification.js';
 
 
 document.addEventListener('DOMContentLoaded', async () => {
-    generarPDF();
-
     // Función para verificar el estado de la API
     async function verificarEstadoAPI() {
         try {
@@ -22,12 +20,32 @@ document.addEventListener('DOMContentLoaded', async () => {
             return false; // Retorna false si hubo un error al realizar la solicitud
         }
     }
-    
+
+    // Función para mostrar la modal de carga
+    function mostrarModalCarga() {
+        const modal = document.getElementById("modal-carga");
+        modal.style.display = "block";
+    }
+
+    // Función para ocultar la modal de carga
+    function ocultarModalCarga() {
+        const modal = document.getElementById("modal-carga");
+        modal.style.display = "none";
+    }
+
     // Función para actualizar los datos en la página
     async function actualizarDatos() {
         try {
-            //const datosUsuario = await cargarDatos('users');
             const estadoAPI = await verificarEstadoAPI();
+            if (!estadoAPI) {
+                console.error('La API no está disponible');
+                return;
+            }
+
+            // Muestra la modal de carga
+            mostrarModalCarga();
+
+            // Cargar los datos
             const datosContacto = await cargarDatos('contact');
             const datosRedesSociales = await cargarDatos('social_network');
             const datosPerfil = await cargarDatos('perfil');
@@ -35,20 +53,25 @@ document.addEventListener('DOMContentLoaded', async () => {
             const datosEducacion = await cargarDatos('education');
             const datosCertificaciones = await cargarDatos('certification');
 
-            if (estadoAPI) {
-                //await actualizarUsuario(datosUsuario);
-                await actualizarContacto(datosContacto);
-                await actualizarRedesSociales(datosRedesSociales);
-                await actualizarPerfil(datosPerfil);
-                await actualizarExperienciaLaboral(datosExperienciaLaboral);
-                await actualizarEducacion(datosEducacion);
-                await actualizarCertificaciones(datosCertificaciones);
-            } else {
-                console.error('No se pudieron cargar los datos');
-            }
+            // Oculta la modal de carga
+            ocultarModalCarga();
+
+            // Actualiza los datos en la página
+            await actualizarContacto(datosContacto);
+            await actualizarRedesSociales(datosRedesSociales);
+            await actualizarPerfil(datosPerfil);
+            await actualizarExperienciaLaboral(datosExperienciaLaboral);
+            await actualizarEducacion(datosEducacion);
+            await actualizarCertificaciones(datosCertificaciones);
+
+            // Genera el PDF después de cargar los datos
+            generarPDF();
         } catch (error) {
             console.error('Error al cargar los datos:', error);
+            // Puedes mostrar un mensaje de error al usuario aquí
         }
     }
-actualizarDatos(); 
+
+    // Llama a la función para cargar los datos
+    actualizarDatos();
 });
