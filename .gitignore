@@ -1,5 +1,5 @@
 # ignorar archivos no necesarios en producción
-*.sass
-*.map
+.sass
+.map
 main.css
 user.js
