@@ -11,11 +11,23 @@ import { actualizarCertificaciones } from './certification.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
     generarPDF();
+
+    // Función para verificar el estado de la API
+    async function verificarEstadoAPI() {
+        try {
+            const response = await fetch('https://jimcostdev-api-jimcostdev.koyeb.app/healthcheck');
+            return response.ok; // Retorna true si la respuesta es exitosa
+        } catch (error) {
+            console.error('Error al verificar el estado del API:', error);
+            return false; // Retorna false si hubo un error al realizar la solicitud
+        }
+    }
     
     // Función para actualizar los datos en la página
     async function actualizarDatos() {
         try {
             //const datosUsuario = await cargarDatos('users');
+            const estadoAPI = await verificarEstadoAPI();
             const datosContacto = await cargarDatos('contact');
             const datosRedesSociales = await cargarDatos('social_network');
             const datosPerfil = await cargarDatos('perfil');
@@ -23,7 +35,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const datosEducacion = await cargarDatos('education');
             const datosCertificaciones = await cargarDatos('certification');
 
-            if (datosContacto) {
+            if (estadoAPI) {
                 //await actualizarUsuario(datosUsuario);
                 await actualizarContacto(datosContacto);
                 await actualizarRedesSociales(datosRedesSociales);
