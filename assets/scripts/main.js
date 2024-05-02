@@ -1,6 +1,6 @@
 import generarPDF from './pdfGenerator.js';
 import { cargarDatos } from './loadData.js';
-import { actualizarUsuario } from './user.js';
+//import { actualizarUsuario } from './user.js';
 import { actualizarContacto } from './contact.js';
 import { actualizarRedesSociales } from './socialNetworks.js';
 import { actualizarPerfil } from './perfil.js';
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Función para actualizar los datos en la página
     async function actualizarDatos() {
         try {
-            const datosUsuario = await cargarDatos('users');
+            //const datosUsuario = await cargarDatos('users');
             const datosContacto = await cargarDatos('contact');
             const datosRedesSociales = await cargarDatos('social_network');
             const datosPerfil = await cargarDatos('perfil');
@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             const datosEducacion = await cargarDatos('education');
             const datosCertificaciones = await cargarDatos('certification');
 
-            if (datosUsuario) {
-                await actualizarUsuario(datosUsuario);
+            if (datosContacto) {
+                //await actualizarUsuario(datosUsuario);
                 await actualizarContacto(datosContacto);
                 await actualizarRedesSociales(datosRedesSociales);
                 await actualizarPerfil(datosPerfil);

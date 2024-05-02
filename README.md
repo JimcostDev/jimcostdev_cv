@@ -19,7 +19,7 @@ Este es mi proyecto de CV desarrollado con **HTML, CSS (Sass), Git y JavaScript*
 
 - 📄 **index.html**: Página principal del currículum.
 - 📄 **main.js**: Archivo JavaScript principal con la lógica del sitio.
-- 📄 **main.sass**: Estilos en formato Sass.
+- 📄 **main.sass**: Estilos en formato Sass. (sass --style compressed main.sass main.min.css)
 
 ---
 
@@ -27,7 +27,7 @@ Este es mi proyecto de CV desarrollado con **HTML, CSS (Sass), Git y JavaScript*
 
 - 🖌️ **Sass**: Uso de Sass para estilos CSS más mantenibles y eficientes.
 - 🌐 **JavaScript**: Implementación de lógica del lado del cliente para cargar datos y calcular tiempos.
-- 📄 **JSON**: Utilización de archivos JSON para almacenar y cargar datos dinámicamente.
+- 📄 **API**: se cargan los datos desde un API contruida en FastAPI
 
 ---
 
