@@ -1,0 +1,4 @@
+# ignorar archivos no necesarios en producción
+.sass
+main.css
+user.js
