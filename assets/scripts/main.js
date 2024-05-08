@@ -34,6 +34,8 @@ async function verificarEstadoAPI() {
 // Función para actualizar los datos en la página
 async function actualizarDatos() {
     try {
+        // Muestra el cuerpo de la página una vez que se haya cargado completamente
+        document.body.style.display = "block";
         // Muestra la modal de carga desde el principio
         mostrarModalCarga();
 
