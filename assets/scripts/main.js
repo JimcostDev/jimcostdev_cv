@@ -23,7 +23,7 @@ function ocultarModalCarga() {
 // Función para verificar el estado de la API
 async function verificarEstadoAPI() {
     try {
-        const response = await fetch('https://jimcostdev-api-jimcostdev.koyeb.app/healthcheck');
+        const response = await fetch('https://jimcostdev.koyeb.app/healthcheck');
         return response.ok; // Retorna true si la respuesta es exitosa
     } catch (error) {
         console.error('Error al verificar el estado del API:', error);
