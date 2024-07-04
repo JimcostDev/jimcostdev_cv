@@ -5,10 +5,10 @@ export async function actualizarContacto(contactoData) {
         nacionalidadElement.textContent = contactoData.nationality;
     }
     // TELEFONO
-    const telefonoElement = document.getElementById('telefono');
-    if (telefonoElement) {
-        telefonoElement.textContent = contactoData.phone_number;
-    }
+    // const telefonoElement = document.getElementById('telefono');
+    // if (telefonoElement) {
+    //     telefonoElement.textContent = contactoData.phone_number;
+    // }
     // CIUDAD
     const ciudadElement = document.getElementById('ciudad');
     if (ciudadElement) {
