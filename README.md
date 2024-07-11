@@ -1,4 +1,4 @@
-# Mi Proyecto de Currículum Vitae
+# JimcostDev CV
 
 ![Icono de Proyecto](https://user-images.githubusercontent.com/53100460/254561844-6471bed7-ba32-4d66-b05f-007da9a95620.jpg)
 
@@ -52,4 +52,4 @@ Este proyecto está bajo la Licencia MIT. Puedes ver más detalles en el archivo
 
 ## Probar
 
-🌐 https://jimcostdev.github.io/CV_JimcostDev/
+🌐 [cv.jimcostdev.com](https://cv.jimcostdev.com/)
