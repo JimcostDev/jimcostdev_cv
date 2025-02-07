@@ -9,7 +9,7 @@ export async function actualizarCertificaciones(certificacionesData) {
             divCertificacion.classList.add('certificacion-item');
 
             // Título: Nombre de la certificación
-            const tituloElement = document.createElement('h3');
+            const tituloElement = document.createElement('h4');
             tituloElement.textContent = certificacion.certification;
             divCertificacion.appendChild(tituloElement);
 

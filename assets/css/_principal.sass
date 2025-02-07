@@ -1,0 +1,47 @@
+/**************** ESTUDIOS Y EXPERIENCIA LABORAL **************************/
+.contenedor
+  .principal
+    display: flex
+    align-items: flex-end
+    background: $color-secundario
+    flex-direction: column
+    width: 70%
+    padding: 60px
+
+    .experiencia-laboral
+      .experiencia-ubicacion, .experiencia-duracion 
+        color: $color-terciario
+        font-size: 0.8rem
+      .descripcion
+        a
+          text-decoration: none
+          color: $color-terciario
+          &:hover
+            color: $color-principal
+
+    .educacion
+      .educacion-year
+        color: $color-terciario
+        font-size: 0.8rem
+      
+/********************** BOTONES **************************/
+
+.botones
+  margin: 10px auto
+  width: 860px
+  display: flex
+  justify-content: right
+  align-items: center 
+  
+  .btn-descargar
+    padding: 12px 24px
+    background-color: $color-terciario
+    cursor: pointer
+    border: none
+    border-radius: 4px
+    color: $color-principal
+    font-size: 0.9rem
+    text-transform: uppercase
+    transition: background-color 0.3s ease
+    &:hover
+      background-color: darken($color-terciario, 10%)
