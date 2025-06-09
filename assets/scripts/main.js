@@ -48,9 +48,9 @@ async function actualizarDatos() {
 
         // Cargar los datos
         const datosContacto = await cargarDatos('contact');
-        console.log('datosContacto →', datosContacto);
         const datosRedesSociales = await cargarDatos('social_networks');
         const datosPerfil = await cargarDatos('profile');
+        console.log('datos →', datosPerfil);
         const datosExperienciaLaboral = await cargarDatos('work_experience');
         const datosEducacion = await cargarDatos('education');
         const datosCertificaciones = await cargarDatos('certifications');

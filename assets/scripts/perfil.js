@@ -1,4 +1,7 @@
-export async function actualizarPerfil(datosPerfil) {
+export async function actualizarPerfil(data) {
+
+    const datosPerfil = Array.isArray(data) ? data[0] : data;
+    
     //*********** PERFIL ************** */
     const rolElement = document.getElementById('rol');
     if (rolElement) {
