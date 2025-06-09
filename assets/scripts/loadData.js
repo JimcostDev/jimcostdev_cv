@@ -1,6 +1,6 @@
 export async function cargarDatos(endpoint) {
-    const urlAPI = `https://jimcostdev.koyeb.app/${endpoint}/jimcostdev`;
-    
+    const user = 'jimcostdev';
+    const urlAPI = `https://jimcostdev.koyeb.app/${endpoint}/p/${user}`;
     try {
         const response = await fetch(urlAPI);
         if (!response.ok) {

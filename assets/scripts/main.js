@@ -48,11 +48,12 @@ async function actualizarDatos() {
 
         // Cargar los datos
         const datosContacto = await cargarDatos('contact');
-        const datosRedesSociales = await cargarDatos('social_network');
-        const datosPerfil = await cargarDatos('perfil');
+        console.log('datosContacto →', datosContacto);
+        const datosRedesSociales = await cargarDatos('social_networks');
+        const datosPerfil = await cargarDatos('profile');
         const datosExperienciaLaboral = await cargarDatos('work_experience');
         const datosEducacion = await cargarDatos('education');
-        const datosCertificaciones = await cargarDatos('certification');
+        const datosCertificaciones = await cargarDatos('certifications');
 
         // Oculta la modal de carga una vez que se han cargado los datos
         ocultarModalCarga();

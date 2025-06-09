@@ -1,4 +1,8 @@
-export async function actualizarContacto(contactoData) {
+export async function actualizarContacto(data) {
+
+     // si vienen en array, nos quedamos con el primer elemento
+    const contactoData = Array.isArray(data) ? data[0] : data;
+
     // NACIONALIDAD
     const nacionalidadElement = document.getElementById('nacionalidad');
     if (nacionalidadElement) {
