@@ -7,6 +7,7 @@ import { actualizarPerfil } from './perfil.js';
 import { actualizarExperienciaLaboral } from './experience.js'; 
 import { actualizarEducacion } from './education.js';
 import { actualizarCertificaciones } from './certification.js';
+import { actualizarUsuario } from './user.js';
 
 // Función para mostrar la modal de carga
 function mostrarModalCarga() {
@@ -50,10 +51,11 @@ async function actualizarDatos() {
         const datosContacto = await cargarDatos('contact');
         const datosRedesSociales = await cargarDatos('social_networks');
         const datosPerfil = await cargarDatos('profile');
-        console.log('datos →', datosPerfil);
         const datosExperienciaLaboral = await cargarDatos('work_experience');
         const datosEducacion = await cargarDatos('education');
         const datosCertificaciones = await cargarDatos('certifications');
+        const datosUsuario = await cargarDatos('users')
+
 
         // Oculta la modal de carga una vez que se han cargado los datos
         ocultarModalCarga();
@@ -65,6 +67,7 @@ async function actualizarDatos() {
         await actualizarExperienciaLaboral(datosExperienciaLaboral);
         await actualizarEducacion(datosEducacion);
         await actualizarCertificaciones(datosCertificaciones);
+        await actualizarUsuario(datosUsuario);
 
         // Genera el PDF después de cargar los datos
         generarPDF();
