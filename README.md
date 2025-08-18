@@ -1,9 +1,5 @@
 # JimcostDev CV
 
----
-
-## Descripción
-
 Este es mi proyecto de CV web personal, desarrollado con **HTML**, **CSS (Sass)** y **JavaScript**. Permite visualizar mi currículum, descargarlo en formato PDF y consume datos desde una API construida con FastAPI. El código está modularizado para facilitar su mantenimiento y comprensión.
 
 ---
