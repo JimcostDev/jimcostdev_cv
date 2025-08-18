@@ -1,55 +1,64 @@
 # JimcostDev CV
 
-![Icono de Proyecto](https://user-images.githubusercontent.com/53100460/254561844-6471bed7-ba32-4d66-b05f-007da9a95620.jpg)
-
 ---
 
 ## Descripción
 
-Este es mi proyecto de CV desarrollado con **HTML, CSS (Sass), Git y JavaScript**. Utiliza una estructura modularizada para facilitar la comprensión y el mantenimiento del código.
+Este es mi proyecto de CV web personal, desarrollado con **HTML**, **CSS (Sass)** y **JavaScript**. Permite visualizar mi currículum, descargarlo en formato PDF y consume datos desde una API construida con FastAPI. El código está modularizado para facilitar su mantenimiento y comprensión.
+
+---
+
+## Características principales
+
+- Visualización de CV en formato web responsivo.
+- Descarga del CV en formato PDF con un solo clic.
+- Consumo de datos dinámicos desde una API (FastAPI).
+- Estructura modular y fácil de mantener.
 
 ---
 
 ## Estructura de Carpetas
 
-- 📁 **assets**: Contiene los recursos del proyecto.
-  - 📁 **css**: Archivos de estilos, incluyendo los generados con Sass.
-  - 📁 **img**: Imágenes utilizadas en el proyecto.
-  - 📁 **scripts**: Archivos JavaScript utilizados para la lógica del proyecto.
-
+- 📁 **assets**: Recursos del proyecto.
+  - 📁 **css**: Estilos (Sass y compilados).
+  - 📁 **imgs**: Imágenes utilizadas.
+  - 📁 **scripts**: Archivos JavaScript para la lógica y consumo de API.
 - 📄 **index.html**: Página principal del currículum.
-- 📄 **main.js**: Archivo JavaScript principal con la lógica del sitio.
-- 📄 **main.sass**: Estilos en formato Sass. (sass --style compressed main.sass main.min.css)
+- 📄 **main.js**: Lógica principal del sitio.
+- 📄 **main.sass**: Estilos fuente en Sass. (Compilar con: `sass --style compressed main.sass main.min.css`)
 
 ---
 
-## Uso de Tecnologías
+## Tecnologías utilizadas
 
-- 🖌️ **Sass**: Uso de Sass para estilos CSS más mantenibles y eficientes.
-- 🌐 **JavaScript**: Implementación de lógica del lado del cliente para cargar datos y calcular tiempos.
-- 📄 **API**: se cargan los datos desde un API contruida en FastAPI
+- 🖌️ **Sass**: Para estilos CSS mantenibles y eficientes.
+- 🌐 **JavaScript**: Lógica del cliente, carga de datos y generación de PDF.
+- ⚡ **FastAPI**: Backend para servir los datos del CV.
+- 📄 **html2pdf**: Librería para generar el PDF desde el navegador.
 
 ---
 
-## Instrucciones de Ejecución
+## Instrucciones de ejecución
 
 1. Clona el repositorio localmente.
-2. Abre el archivo `index.html` en tu navegador.
+2. Abre el archivo `index.html` en tu navegador preferido.
+3. Haz clic en el botón de descarga para obtener el CV en PDF.
 
 ---
+
 
 ## Contribuciones
 
-¡Las contribuciones son bienvenidas! Si deseas mejorar algo, siéntete libre de abrir un pull request.
+¡Las contribuciones son bienvenidas! Si deseas mejorar algo, abre un pull request.
 
 ---
 
 ## Licencia
 
-Este proyecto está bajo la Licencia MIT. Puedes ver más detalles en el archivo [LICENSE](https://github.com/JimcostDev/CV_JimcostDev/blob/master/LICENSE).
+Este proyecto está bajo la Licencia MIT. Más detalles en el archivo [LICENSE](./LICENSE).
 
 ---
 
-## Probar
+## Demo en línea
 
 🌐 [cv.jimcostdev.com](https://cv.jimcostdev.com/)
