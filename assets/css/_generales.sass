@@ -1,9 +1,10 @@
 /**************** GENERALES **************************/
 
-$color-principal:#00142E // azul oscuro
-$color-secundario:#F2FBFF // blanco
-$color-terciario:#03A9F4 // azul claro
-$margen-abajo-seccion: 20px 
+$color-principal: #00142E   // azul oscuro (sidebar)
+$color-secundario: #F2FBFF  // blanco (texto/fondo principal)
+$color-terciario: #03A9F4   // azul claro (detalles/acento)
+
+$margen-abajo-seccion: 20px
 $margen-abajo-texto: 5px
 
 *
@@ -16,6 +17,9 @@ $margen-abajo-texto: 5px
 body
   font-family: "Open Sans", sans-serif
   font-size: 14px
+  line-height: 1.5               // mejora la legibilidad
+  background-color: lighten($color-principal, 90%) // leve gris azulado de fondo
+  color: darken($color-principal, 10%)
 
 .contenedor
   margin: 20px auto
@@ -23,6 +27,10 @@ body
   display: flex
   flex-direction: row
   flex-wrap: wrap
+  background: $color-secundario
+  border-radius: 8px
+  overflow: hidden
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12)
 
   .titulo
     font-size: 16px
@@ -32,6 +40,7 @@ body
     width: 100%
     text-align: left
     text-transform: uppercase
+    letter-spacing: 0.5px
 
   .linea
     border: 1px solid $color-terciario
@@ -41,10 +50,14 @@ body
   .principal
     .titulo-principal
       font-size: 20px
+      font-weight: 700
+      letter-spacing: 0.5px
+      color: $color-principal
 
     .linea-principal
       border: 1px solid $color-terciario
       width: 30%
+      margin: 8px 0 16px 0
 
   .bold
     font-weight: 600
@@ -52,4 +65,3 @@ body
   
   .mb
     margin-bottom: $margen-abajo-texto
-

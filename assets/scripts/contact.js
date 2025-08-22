@@ -1,26 +1,42 @@
 export async function actualizarContacto(data) {
+  const contactoData = Array.isArray(data) ? data[0] : data;
+  const contenedor = document.querySelector('.contacto');
+  if (!contenedor) return;
 
-     // si vienen en array, nos quedamos con el primer elemento
-    const contactoData = Array.isArray(data) ? data[0] : data;
+  // Deja la foto y título, elimina los <p> anteriores
+  contenedor.querySelectorAll('p').forEach(p => p.remove());
 
-    // NACIONALIDAD
-    const nacionalidadElement = document.getElementById('nacionalidad');
-    if (nacionalidadElement) {
-        nacionalidadElement.textContent = contactoData.nationality;
+  const campos = [
+    { key: 'nationality', icon: 'fas fa-globe', label: '' },
+    // { key: 'phone_number', icon: 'fab fa-whatsapp', label: '' }, // si decides mostrarlo
+    { key: 'i_live_in', icon: 'fas fa-map-marker-alt', label: '' },
+    { key: 'email', icon: 'fas fa-envelope', label: '' },
+    { key: 'web', icon: 'fas fa-link', isLink: true, label: '' }
+  ];
+
+  campos.forEach(({ key, icon, isLink }) => {
+    const valor = contactoData[key];
+    if (!valor) return;
+
+    const p = document.createElement('p');
+    const iconEl = document.createElement('i');
+    iconEl.className = icon;
+
+    p.appendChild(iconEl);
+    p.appendChild(document.createTextNode(' '));
+
+    if (isLink) {
+      const a = document.createElement('a');
+      a.href = valor;
+      a.target = '_blank';
+      a.textContent = valor;
+      p.appendChild(a);
+    } else {
+      const span = document.createElement('span');
+      span.textContent = valor;
+      p.appendChild(span);
     }
-    // TELEFONO
-    // const telefonoElement = document.getElementById('telefono');
-    // if (telefonoElement) {
-    //     telefonoElement.textContent = contactoData.phone_number;
-    // }
-    // CIUDAD
-    const ciudadElement = document.getElementById('ciudad');
-    if (ciudadElement) {
-        ciudadElement.textContent = contactoData.i_live_in;
-    }
-    // EMAIL
-    const emailElement = document.getElementById('email');
-    if (emailElement) {
-        emailElement.textContent = contactoData.email;
-    }
+
+    contenedor.appendChild(p);
+  });
 }
