@@ -8,12 +8,12 @@ $color-terciario: #0066cc;       // azul vibrante (acento)
 $color-neutro: #f5f7fa;          // gris neutro para contraste
 $color-texto-secundario: #6b7280; // gris medio para texto secundario
 
-$margen-abajo-seccion: 18px;
+$margen-abajo-seccion: 12px;
 $margen-abajo-texto: 6px;
 
 // Variables para espaciado consistente
-$border-radius: 12px;
-$border-radius-small: 6px;
+$border-radius: 10px;
+$border-radius-small: 5px;
 $shadow-soft: 0 2px 8px rgba(0,0,0,0.08);
 $shadow-medium: 0 4px 20px rgba(0,0,0,0.1);
 $transition-smooth: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
@@ -39,7 +39,7 @@ body {
 }
 
 .contenedor {
-  margin: 24px auto;
+  margin: 16px auto;
   width: min(860px, 95vw);
   display: flex;
   flex-direction: row;
@@ -66,8 +66,8 @@ body {
   .titulo {
     font-size: 16px;
     font-weight: 600;
-    margin-bottom: 6px;
-    margin-top: 18px;
+    margin-bottom: 4px;
+    margin-top: 12px;
     width: 100%;
     text-align: left;
     text-transform: uppercase;
@@ -92,7 +92,7 @@ body {
     border: none;
     height: 1px;
     width: 100%;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     background: linear-gradient(90deg, $color-terciario, color.adjust($color-terciario, $alpha: -0.8));
     border-radius: 0.5px;
   }
@@ -103,10 +103,6 @@ body {
       font-weight: 700;
       letter-spacing: -0.025em;
       color: $color-principal;
-      background: linear-gradient(135deg, $color-principal 0%, color.adjust($color-principal, $lightness: 20%) 100%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
       position: relative;
     }
 
@@ -114,7 +110,7 @@ body {
       border: none;
       height: 3px;
       width: 30%;
-      margin: 8px 0 16px 0;
+      margin: 6px 0 10px 0;
       background: linear-gradient(90deg, $color-terciario 0%, color.adjust($color-terciario, $lightness: 20%) 100%);
       border-radius: 2px;
       position: relative;

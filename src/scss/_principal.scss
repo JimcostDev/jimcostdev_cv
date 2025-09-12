@@ -27,13 +27,10 @@
     // Estilos para la sección de perfil
     .perfil {
       width: 100%;
-      margin-bottom: 32px;
+      margin-bottom: 24px;
       
       .titulo-principal {
-        color: $color-principal; // fallback para PDF
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: $color-principal;
       }
 
       
@@ -41,7 +38,7 @@
         border: none;
         height: 3px;
         width: 30%;
-        margin: 8px 0 16px 0;
+        margin: 6px 0 8px 0;
         background: linear-gradient(90deg, $color-terciario 0%, color.adjust($color-terciario, $lightness: 20%) 100%);
         border-radius: 2px;
         position: relative;
@@ -62,18 +59,18 @@
       .descripcion {
         .rol {
           color: $color-terciario !important;
-          font-size: 16px;
+          font-size: 15px;
           font-weight: 600;
-          margin-bottom: 12px;
+          margin-bottom: 8px;
           text-transform: uppercase;
           letter-spacing: 1px;
         }
         
         p {
           color: color.adjust($color-principal, $lightness: 15%) !important;
-          font-size: 16px;
+          font-size: 14px;
           line-height: 1.6;
-          margin-bottom: 12px;
+          margin-bottom: 8px;
           font-weight: 400;
         }
       }
@@ -82,7 +79,7 @@
     // Estilos base para secciones
     .experiencia-laboral,
     .educacion {
-      margin-bottom: 32px;
+      margin-bottom: 24px;
       position: relative;
       
       // Timeline visual sutil
@@ -171,7 +168,7 @@
       // Empresa/organización
       h4 {
         color: $color-terciario;
-        font-weight: 600;
+        font-weight: 700;
         margin-bottom: 14px;
         font-size: 15px;
         text-transform: uppercase;
@@ -183,7 +180,7 @@
         color: color.adjust($color-principal, $lightness: 25%);
         
         p {
-          margin-bottom: 8px;
+          margin-bottom: 6px;
           position: relative;
           padding-left: 16px;
           
@@ -283,13 +280,14 @@
         margin-bottom: 8px;
         font-size: 18px;
         line-height: 1.3;
+        text-transform: capitalize;
       }
       
       // Institución
       h4 {
         color: $color-terciario;
-        font-weight: 400;
-        margin-bottom: 12px;
+        font-weight: 500;
+        margin-bottom: 8px;
         font-size: 12px;
         letter-spacing: 0.5px;
       }
@@ -299,7 +297,7 @@
         color: $color-principal;
         
         p {
-          margin-bottom: 10px;
+          margin-bottom: 8px;
           position: relative;
           padding-left: 16px;
           
