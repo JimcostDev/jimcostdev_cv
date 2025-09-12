@@ -17,7 +17,7 @@ export async function actualizarCertificaciones(certificacionesData) {
             const empresaElement = document.createElement('p');
             empresaElement.textContent = `${certificacion.company} - `;
             const enlaceElement = document.createElement('a');
-            enlaceElement.innerHTML = '<span class="ver-texto">ver certificación</span>';
+            enlaceElement.innerHTML = '<span class="ver-texto">Ver</span>';
             enlaceElement.href = certificacion.link;
             enlaceElement.target = '_blank';
             empresaElement.appendChild(enlaceElement);

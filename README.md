@@ -1,60 +1,88 @@
 # JimcostDev CV
 
-Este es mi proyecto de CV web personal, desarrollado con **HTML**, **CSS (Sass)** y **JavaScript**. Permite visualizar mi currículum, descargarlo en formato PDF y consume datos desde una API construida con FastAPI. El código está modularizado para facilitar su mantenimiento y comprensión.
+Este es mi proyecto de **CV web personal**, desarrollado con **HTML**,
+**SCSS (Sass moderno)** y **JavaScript**.\
+Permite visualizar mi currículum, descargarlo en formato PDF y consumir
+datos desde una API construida con FastAPI.\
+El código está modularizado y estructurado para facilitar su
+mantenimiento y escalabilidad.
 
----
+------------------------------------------------------------------------
 
-## Características principales
+## 🚀 Características principales
 
-- Visualización de CV en formato web responsivo.
-- Descarga del CV en formato PDF con un solo clic.
-- Consumo de datos dinámicos desde una API (FastAPI).
-- Estructura modular y fácil de mantener.
-
----
-
-## Estructura de Carpetas
-
-- 📁 **assets**: Recursos del proyecto.
-  - 📁 **css**: Estilos (Sass y compilados).
-  - 📁 **imgs**: Imágenes utilizadas.
-  - 📁 **scripts**: Archivos JavaScript para la lógica y consumo de API.
-- 📄 **index.html**: Página principal del currículum.
-- 📄 **main.js**: Lógica principal del sitio.
-- 📄 **main.sass**: Estilos fuente en Sass. (Compilar con: `sass --style compressed main.sass main.min.css`)
-
----
-
-## Tecnologías utilizadas
-
-- 🖌️ **Sass**: Para estilos CSS mantenibles y eficientes.
-- 🌐 **JavaScript**: Lógica del cliente, carga de datos y generación de PDF.
-- ⚡ **FastAPI**: Backend para servir los datos del CV.
-- 📄 **html2pdf**: Librería para generar el PDF desde el navegador.
-
----
-
-## Instrucciones de ejecución
-
-1. Clona el repositorio localmente.
-2. Abre el archivo `index.html` en tu navegador preferido.
-3. Haz clic en el botón de descarga para obtener el CV en PDF.
-
----
+-   Visualización de CV en formato web responsivo.
+-   Descarga del CV en formato PDF con un solo clic.
+-   Consumo de datos dinámicos desde una API (FastAPI).
+-   Estilos organizados con **SCSS** usando `@use` y `@forward`.
+-   Proceso de build con **npm scripts**, **PostCSS**, **Autoprefixer**
+    y **cssnano**.
+-   Código limpio y fácilmente extensible.
 
 
-## Contribuciones
+------------------------------------------------------------------------
 
-¡Las contribuciones son bienvenidas! Si deseas mejorar algo, abre un pull request.
+## 🛠️ Tecnologías utilizadas
 
----
+-   🖌️ **SCSS (Sass moderno)**: Estilos modulares y mantenibles.
+-   🌐 **JavaScript**: Lógica del cliente, carga de datos y generación
+    de PDF.
+-   ⚡ **FastAPI**: Backend para servir los datos del CV.
+-   📄 **html2pdf.js**: Generación de PDF en el navegador.
+-   📦 **npm + PostCSS (Autoprefixer, cssnano)**: Compilación, prefijos
+    automáticos y minificación.
 
-## Licencia
+------------------------------------------------------------------------
 
-Este proyecto está bajo la Licencia MIT. Más detalles en el archivo [LICENSE](./LICENSE).
+## 📦 Instalación y uso
 
----
+1.  Clonar el repositorio:
 
-## Demo en línea
+    ``` bash
+    git clone https://github.com/JimcostDev/jimcostdev_cv.git
+    cd jimcostdev_cv
+    ```
 
-🌐 [cv.jimcostdev.com](https://cv.jimcostdev.com/)
+2.  Instalar dependencias:
+
+    ``` bash
+    npm install
+    ```
+
+3.  Compilar los estilos:
+
+    ``` bash
+    npm run build
+    ```
+
+    Esto generará `assets/css/main.min.css`.
+
+4.  Para desarrollo con recompilación automática:
+
+    ``` bash
+    npm run watch:css
+    ```
+
+    y opcionalmente en otra terminal:
+
+    ``` bash
+    npm run postcss -- -w
+    ```
+
+5.  Abrir `index.html` en el navegador 🚀
+
+------------------------------------------------------------------------
+
+## 🤝 Contribuciones
+
+¡Las contribuciones son bienvenidas!\
+Si deseas mejorar algo, abre un **pull request** o crea un **issue**.
+
+------------------------------------------------------------------------
+
+## 📜 Licencia
+
+Este proyecto está bajo la **Licencia MIT**.\
+Más detalles en el archivo [LICENSE](./LICENSE).
+
+

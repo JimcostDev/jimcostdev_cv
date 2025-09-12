@@ -1,4 +1,33 @@
-# ignorar archivos no necesarios en producción
-.sass
-.map
-main.css
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+
+# Build outputs
+dist/
+build/
+.cache/
+
+# Sass / CSS
+*.css.map
+assets/css/main.css   # CSS intermedio, se regenera desde src/scss
+assets/css/*.map
+
+# Logs
+*.log
+*.log.*
+
+# Editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# OS
+ehthumbs.db
+Icon?

@@ -1,0 +1,405 @@
+/* **************** ESTUDIOS Y EXPERIENCIA LABORAL ************************** */
+@use "sass:color";
+@use 'generales' as *;
+
+.contenedor {
+  .principal {
+    display: flex;
+    align-items: flex-start;
+    background: $color-secundario;
+    flex-direction: column;
+    width: 70%;
+    padding: 24px 48px 20px 48px;
+    position: relative;
+    
+    // Efecto de profundidad sutil
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, $color-terciario, transparent);
+      opacity: 0.3;
+    }
+
+    // Estilos para la sección de perfil
+    .perfil {
+      width: 100%;
+      margin-bottom: 32px;
+      
+      .titulo-principal {
+        color: $color-principal; // fallback para PDF
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      
+      .linea-principal {
+        border: none;
+        height: 3px;
+        width: 30%;
+        margin: 8px 0 16px 0;
+        background: linear-gradient(90deg, $color-terciario 0%, color.adjust($color-terciario, $lightness: 20%) 100%);
+        border-radius: 2px;
+        position: relative;
+        
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 40%;
+          background: rgba(255, 255, 255, 0.3);
+          border-radius: 2px;
+          animation: shimmer 2s infinite;
+        }
+      }
+      
+      .descripcion {
+        .rol {
+          color: $color-terciario !important;
+          font-size: 16px;
+          font-weight: 600;
+          margin-bottom: 12px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+        
+        p {
+          color: color.adjust($color-principal, $lightness: 15%) !important;
+          font-size: 16px;
+          line-height: 1.6;
+          margin-bottom: 12px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    // Estilos base para secciones
+    .experiencia-laboral,
+    .educacion {
+      margin-bottom: 32px;
+      position: relative;
+      
+      // Timeline visual sutil
+      &::before {
+        content: '';
+        position: absolute;
+        left: -24px;
+        top: 0;
+        bottom: -24px;
+        width: 2px;
+        background: linear-gradient(180deg, $color-terciario, color.adjust($color-terciario, $alpha: -0.8));
+        border-radius: 1px;
+        opacity: 0.3;
+      }
+      
+      &:last-child::before {
+        background: linear-gradient(180deg, $color-terciario, transparent);
+      }
+    }
+
+    // Experiencia laboral mejorada
+    .experiencia-laboral {
+      padding: 12px 0 12px 24px;
+      border-radius: $border-radius-small;
+      transition: $transition-smooth;
+      position: relative;
+      
+      &:hover {
+        background: color.adjust($color-neutro, $alpha: -0.5);
+        transform: translateX(4px);
+        box-shadow: $shadow-soft;
+      }
+      
+      // Indicador de timeline
+      &::after {
+        content: '';
+        position: absolute;
+        left: -30px;
+        top: 32px;
+        width: 8px;
+        height: 8px;
+        background: $color-terciario;
+        border-radius: 50%;
+        border: 2px solid $color-secundario;
+        box-shadow: 0 0 0 2px color.adjust($color-terciario, $alpha: -0.7);
+      }
+
+      .experiencia-ubicacion,
+      .experiencia-duracion {
+        color: $color-texto-secundario;
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 4px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: color.adjust($color-terciario, $alpha: -0.9);
+        padding: 4px 12px;
+        border-radius: 16px;
+        border: 1px solid color.adjust($color-terciario, $alpha: -0.8);
+        margin-right: 8px;
+        margin-bottom: 12px;
+        
+        &::before {
+          content: '📍';
+          font-size: 11px;
+        }
+      }
+      
+      .experiencia-duracion {
+        &::before {
+          content: '📅';
+        }
+      }
+
+      // Título del puesto mejorado
+      h3 {
+        color: $color-principal;
+        font-weight: 700;
+        margin-bottom: 6px;
+        position: relative;
+        font-size: 18px;
+        line-height: 1.3;
+      }
+      
+      // Empresa/organización
+      h4 {
+        color: $color-terciario;
+        font-weight: 600;
+        margin-bottom: 14px;
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .descripcion {
+        line-height: 1.7;
+        color: color.adjust($color-principal, $lightness: 25%);
+        
+        p {
+          margin-bottom: 8px;
+          position: relative;
+          padding-left: 16px;
+          
+          &::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: $color-terciario;
+            font-size: 12px;
+            top: 2px;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: $color-terciario;
+          font-weight: 600;
+          position: relative;
+          padding: 2px 4px;
+          border-radius: 4px;
+          transition: $transition-smooth;
+
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, $color-terciario, color.adjust($color-terciario, $lightness: 20%));
+            transition: $transition-smooth;
+          }
+
+          &:hover {
+            color: $color-principal;
+            background: color.adjust($color-terciario, $alpha: -0.9);
+            text-decoration: none;
+            
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    // Educación mejorada
+    .educacion {
+      padding: 12px 0 12px 24px;
+      border-radius: $border-radius-small;
+      transition: $transition-smooth;
+      position: relative;
+      
+      &:hover {
+        background: color.adjust($color-neutro, $alpha: -0.5);
+        transform: translateX(4px);
+        box-shadow: $shadow-soft;
+      }
+      
+      // Indicador de timeline
+      &::after {
+        content: '';
+        position: absolute;
+        left: -30px;
+        top: 32px;
+        width: 8px;
+        height: 8px;
+        background: color.adjust($color-terciario, $lightness: 10%);
+        border-radius: 50%;
+        border: 2px solid $color-secundario;
+        box-shadow: 0 0 0 2px color.adjust($color-terciario, $alpha: -0.7);
+      }
+
+      .educacion-year {
+        color: $color-texto-secundario;
+        font-size: 13px;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: color.adjust($color-terciario, $alpha: -0.9);
+        padding: 4px 12px;
+        border-radius: 16px;
+        border: 1px solid color.adjust($color-terciario, $alpha: -0.8);
+        margin-bottom: 10px;
+        
+        &::before {
+          content: '🎓';
+          font-size: 11px;
+        }
+      }
+
+      // Título del curso/carrera
+      h3 {
+        color: $color-principal;
+        font-weight: 700;
+        margin-bottom: 8px;
+        font-size: 18px;
+        line-height: 1.3;
+      }
+      
+      // Institución
+      h4 {
+        color: $color-terciario;
+        font-weight: 400;
+        margin-bottom: 12px;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+      }
+
+      .descripcion {
+        line-height: 1.7;
+        color: $color-principal;
+        
+        p {
+          margin-bottom: 10px;
+          position: relative;
+          padding-left: 16px;
+          
+          &::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: $color-terciario;
+            font-size: 12px;
+            top: 2px;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: color.adjust($color-terciario, $lightness: 10%);
+          font-weight: 600;
+          position: relative;
+          padding: 2px 4px;
+          border-radius: 4px;
+          transition: $transition-smooth;
+
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, $color-terciario, color.adjust($color-terciario, $lightness: 20%));
+            transition: $transition-smooth;
+          }
+
+          &:hover {
+            color: $color-principal;
+            background: color.adjust($color-terciario, $alpha: -0.9);
+            text-decoration: none;
+            
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ********************** BOTONES ************************** */
+
+.botones {
+  margin: 16px auto;
+  width: min(860px, 95vw);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+
+  .btn-descargar {
+    padding: 12px 28px;
+    background: linear-gradient(135deg, $color-terciario 0%, color.adjust($color-terciario, $lightness: 15%) 100%);
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    color: $color-secundario;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: $transition-smooth;
+    position: relative;
+    overflow: hidden;
+    box-shadow: $shadow-soft;
+    
+    // Efecto de brillo
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+      transition: $transition-smooth;
+    }
+
+    &:hover {
+      background: linear-gradient(135deg, color.adjust($color-terciario, $lightness: -10%) 0%, $color-terciario 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      
+      &::before {
+        left: 100%;
+      }
+    }
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: $shadow-soft;
+    }
+  }
+}
+

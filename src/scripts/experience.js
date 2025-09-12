@@ -56,7 +56,7 @@ export async function actualizarExperienciaLaboral(experienciaLaboralData) {
 
       // Localización
       const locationElement = document.createElement("p");
-      locationElement.textContent = `[${experiencia.location}] `;
+      locationElement.textContent = `${experiencia.location}`;
       locationElement.classList.add("experiencia-ubicacion");
       divExperiencia.appendChild(locationElement);
 

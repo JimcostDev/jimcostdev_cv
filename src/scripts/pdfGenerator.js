@@ -40,7 +40,7 @@ function generarPDF() {
 
       Swal.fire({
         title: "¡Documento guardado!",
-        text: "El CV se exportó correctamente en una sola hoja.",
+        text: "El CV se exportó correctamente",
         icon: "success",
         confirmButtonColor: "#03A9F4",
       });

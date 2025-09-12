@@ -14,7 +14,7 @@ export async function actualizarEducacion(educacionData) {
             divEducacion.appendChild(tituloElement);
 
             // Nombre de la universidad
-            const universidadElement = document.createElement('p');
+            const universidadElement = document.createElement('h4');
             universidadElement.textContent = educacion.company;
             universidadElement.classList.add('educacion-universidad');
             divEducacion.appendChild(universidadElement);
