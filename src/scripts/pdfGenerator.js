@@ -23,7 +23,7 @@ function generarPDF() {
       },
       jsPDF: {
         unit: "in",
-        format: "a3", // fijo en A3 para evitar cortes
+        format: "a4", // fijo en A3 para evitar cortes
         orientation: "portrait",
       },
     };

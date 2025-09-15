@@ -1,22 +1,25 @@
 /* **************** GENERALES ************************** */
 @use "sass:color";
 
-// Paleta de colores moderna y sofisticada
-$color-principal: #1a1a2e;      // azul oscuro profundo
-$color-secundario: #fafafa;      // gris muy claro (fondo principal)
-$color-terciario: #0066cc;       // azul vibrante (acento)
-$color-neutro: #f5f7fa;          // gris neutro para contraste
-$color-texto-secundario: #6b7280; // gris medio para texto secundario
+// Paleta de colores minimalista sky/white
+$color-principal: #0f172a;        // slate-900 para textos principales
+$color-secundario: #ffffff;       // blanco puro para fondo
+$color-terciario: #0284c7;        // sky-600 para acentos
+$color-cuaternario: #f8fafc;      // slate-50 para fondos sutiles
+$color-texto-secundario: #475569;  // slate-600 para textos secundarios
+$color-linea: #e2e8f0;           // slate-200 para divisores
 
-$margen-abajo-seccion: 12px;
-$margen-abajo-texto: 6px;
+// Espaciado mínimo para optimizar espacio en hoja
+$margen-abajo-seccion: 8px;
+$margen-abajo-texto: 4px;
+$padding-minimo: 6px;
+$padding-seccion: 12px;
 
-// Variables para espaciado consistente
-$border-radius: 10px;
-$border-radius-small: 5px;
-$shadow-soft: 0 2px 8px rgba(0,0,0,0.08);
-$shadow-medium: 0 4px 20px rgba(0,0,0,0.1);
-$transition-smooth: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+// Variables de diseño minimalista
+$border-radius: 4px;
+$border-radius-small: 2px;
+$shadow-minimal: 0 1px 3px rgba(0,0,0,0.05);
+$transition-quick: all 0.2s ease;
 
 * {
   padding: 0;
@@ -27,112 +30,90 @@ $transition-smooth: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
   font-weight: 400;
   background: $color-secundario;
-  color: color.adjust($color-principal, $lightness: 15%);
-  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  color: $color-principal;
+  font-feature-settings: "kern" 1, "liga" 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
 }
 
 .contenedor {
-  margin: 16px auto;
-  width: min(860px, 95vw);
+  margin: 8px auto;
+  width: min(210mm, 98vw); // Optimizado para tamaño A4
+  max-width: 794px; // A4 width at 96 DPI
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   background: $color-secundario;
   border-radius: $border-radius;
   overflow: hidden;
-  box-shadow: $shadow-medium;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: $shadow-minimal;
   position: relative;
+  min-height: 297mm; // A4 height
   
-  // Efecto glassmorphism sutil
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-  }
-
   .titulo {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
-    margin-bottom: 4px;
-    margin-top: 12px;
+    margin-bottom: 3px;
+    margin-top: 8px;
     width: 100%;
     text-align: left;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     color: $color-principal;
     position: relative;
     
-    // Mejora tipográfica
+    // Indicador minimalista
     &::after {
       content: '';
       position: absolute;
-      bottom: -4px;
+      bottom: -2px;
       left: 0;
-      width: 24px;
-      height: 2px;
-      background: linear-gradient(90deg, $color-terciario, transparent);
-      border-radius: 1px;
+      width: 20px;
+      height: 1px;
+      background: $color-terciario;
+      border-radius: 0.5px;
     }
   }
 
   .linea {
     border: none;
-    height: 1px;
+    height: 0.5px;
     width: 100%;
-    margin-bottom: 6px;
-    background: linear-gradient(90deg, $color-terciario, color.adjust($color-terciario, $alpha: -0.8));
-    border-radius: 0.5px;
+    margin-bottom: 4px;
+    background: $color-linea;
+    opacity: 0.8;
   }
 
   .principal {
     .titulo-principal {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 700;
-      letter-spacing: -0.025em;
+      letter-spacing: -0.01em;
       color: $color-principal;
       position: relative;
+      margin-bottom: 2px;
     }
 
     .linea-principal {
       border: none;
-      height: 3px;
-      width: 30%;
-      margin: 6px 0 10px 0;
-      background: linear-gradient(90deg, $color-terciario 0%, color.adjust($color-terciario, $lightness: 20%) 100%);
-      border-radius: 2px;
-      position: relative;
-      
-      &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 40%;
-        background: rgba(255, 255, 255, 0.3);
-        border-radius: 2px;
-        animation: shimmer 2s infinite;
-      }
+      height: 2px;
+      width: 25%;
+      margin: 4px 0 8px 0;
+      background: linear-gradient(90deg, $color-terciario 0%, color.adjust($color-terciario, $lightness: 30%) 100%);
+      border-radius: 1px;
     }
   }
 
   .bold {
     font-weight: 600;
     color: $color-principal;
-    position: relative;
   }
 
   .mb {
@@ -140,10 +121,33 @@ body {
   }
 }
 
-// Animación sutil para el efecto shimmer
-@keyframes shimmer {
-  0% { transform: translateX(-100%); opacity: 0; }
-  50% { opacity: 1; }
-  100% { transform: translateX(150%); opacity: 0; }
+
+// Utilidades de espaciado mínimo
+.mt-xs { margin-top: 2px; }
+.mb-xs { margin-bottom: 2px; }
+.mt-sm { margin-top: 4px; }
+.mb-sm { margin-bottom: 4px; }
+.pt-xs { padding-top: 2px; }
+.pb-xs { padding-bottom: 2px; }
+.pt-sm { padding-top: 4px; }
+.pb-sm { padding-bottom: 4px; }
+
+// Tipografía optimizada para CV
+.text-sm {
+  font-size: 12px;
+  line-height: 1.3;
 }
 
+.text-xs {
+  font-size: 11px;
+  line-height: 1.2;
+  color: $color-texto-secundario;
+}
+
+.text-primary {
+  color: $color-terciario;
+}
+
+.text-secondary {
+  color: $color-texto-secundario;
+}

@@ -7,63 +7,25 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    background: linear-gradient(135deg, $color-principal 0%, color.adjust($color-principal, $lightness: -5%) 100%);
-    padding: 48px 32px;
-    width: 30%;
+    background: $color-cuaternario;
+    padding: $padding-seccion;
+    width: 32%;
     position: relative;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid $color-linea;
     
-    // Efecto de textura sutil
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-image: 
-        radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.02) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.02) 0%, transparent 50%);
-      pointer-events: none;
-    }
-
     .foto-perfil {
-      width: 136px;
-      margin: 0 auto 32px auto;
+      width: 80px;
+      margin: 0 auto $margen-abajo-texto auto;
       position: relative;
-      
-      // Contenedor con efecto hover
-      &::before {
-        content: '';
-        position: absolute;
-        top: -4px;
-        left: -4px;
-        right: -4px;
-        bottom: -4px;
-        background: linear-gradient(135deg, $color-terciario 0%, color.adjust($color-terciario, $lightness: 20%) 100%);
-        border-radius: 50%;
-        opacity: 0;
-        transition: $transition-smooth;
-        z-index: -1;
-      }
-      
-      &:hover::before {
-        opacity: 1;
-        transform: scale(1.02);
-      }
 
       img {
         border-radius: 50%;
         width: 100%;
-        border: 4px solid rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(10px);
-        transition: $transition-smooth;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+        border: 2px solid $color-terciario;
+        transition: $transition-quick;
         
         &:hover {
           transform: scale(1.02);
-          border-color: color.adjust($color-terciario, $alpha: -0.3);
-          box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
         }
       }
     }
@@ -73,78 +35,60 @@
     .redes-sociales,
     .skills,
     .certificacion {
-      margin-bottom: calc(#{$margen-abajo-seccion} + 6px);
+      margin-bottom: $margen-abajo-seccion;
       position: relative;
-      
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: -12px;
-        left: 0;
-        right: 0;
-        height: 1px;
-        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
-      }
-      
-      &:last-child::after {
-        display: none;
-      }
+      width: 100%;
 
       .titulo {
-        color: $color-secundario;
-        font-weight: 700;
-        margin-bottom: 14px;
-        font-size: 15px;
+        color: $color-principal;
+        font-weight: 600;
+        margin-bottom: $padding-minimo;
+        font-size: 13px;
         text-transform: uppercase;
-        letter-spacing: 0.8px;
+        letter-spacing: 0.5px;
         position: relative;
         
-        &::before {
-          content: '';
-          position: absolute;
-          left: -16px;
-          top: 50%;
-          transform: translateY(-50%);
-          width: 3px;
-          height: 16px;
-          background: linear-gradient(180deg, $color-terciario, color.adjust($color-terciario, $lightness: 30%));
-          border-radius: 2px;
+        &::after {
+          width: 16px;
+          height: 1px;
+          background: $color-terciario;
         }
+      }
+
+      .linea {
+        margin-bottom: $padding-minimo;
+        background: $color-linea;
+        height: 0.5px;
       }
 
       p {
-        margin-bottom: calc(#{$margen-abajo-texto} + 3px);
-        color: color.adjust($color-secundario, $lightness: -8%);
+        margin-bottom: 3px;
+        color: $color-texto-secundario;
         display: flex;
-        align-items: center;
-        gap: 12px;
+        align-items: flex-start;
+        gap: 6px;
         font-weight: 400;
-        line-height: 1.5;
-        transition: $transition-smooth;
-        padding: 4px 0;
-        border-radius: $border-radius-small;
+        line-height: 1.3;
+        font-size: 12px;
+        transition: $transition-quick;
         
         &:hover {
-          color: $color-secundario;
-          transform: translateX(4px);
-          background: rgba(255, 255, 255, 0.05);
-          padding-left: 8px;
+          color: $color-principal;
         }
         
-        // Iconos mejorados
+        // Punto minimalista
         &::before {
           content: '•';
           color: $color-terciario;
           font-weight: bold;
-          width: 16px;
-          height: 16px;
+          width: 12px;
+          height: 12px;
           display: flex;
           align-items: center;
           justify-content: center;
-          border-radius: 50%;
-          background: rgba(255, 255, 255, 0.1);
-          font-size: 12px;
+          font-size: 8px;
           flex-shrink: 0;
+          margin-top: 2px;
         }
       }
     }
@@ -152,58 +96,70 @@
     // Estilos específicos para skills
     .skills {
       p {
-        position: relative;
-        padding-left: 24px;
-        
         &::before {
           content: '▸';
-          position: absolute;
-          left: 0;
           color: $color-terciario;
-          font-size: 12px;
-          top: 50%;
-          transform: translateY(-50%);
-          width: auto;
+          font-size: 10px;
+          width: 8px;
           height: auto;
-          background: none;
-          border-radius: 0;
+          margin-top: 1px;
         }
-        
-        &:hover::before {
-          transform: translateY(-50%) translateX(2px);
+      }
+    }
+
+    // Estilos específicos para redes sociales
+    .redes-sociales {
+      p {
+        &::before {
+          content: '🔗';
+          font-size: 10px;
+          width: 12px;
         }
       }
     }
 
     // Estilos específicos para certificaciones
     .certificacion {
-       h4 {
-        color: $color-secundario;   // texto claro sobre el fondo oscuro
-        font-size: 14px;
-        font-weight: 600;
-        margin-bottom: 6px;
+      .infoCertificacion {
+        h4 {
+          color: $color-principal;
+          font-size: 12px;
+          font-weight: 600;
+          margin-bottom: 2px;
+          line-height: 1.2;
         }
-      a {
-        text-decoration: none;
-        color: color.adjust($color-terciario, $lightness: 10%);
-        font-size: 13px;
-        font-weight: 500;
-        padding: 2px 12px;
-        border: 1px solid color.adjust($color-terciario, $alpha: -0.7);
-        border-radius: 20px;
-        background: rgba(255, 255, 255, 0.05);
-        backdrop-filter: blur(10px);
-        transition: $transition-smooth;
-        display: inline-block;
-        margin-top: 6px;
 
-        &:hover {
-          background: color.adjust($color-terciario, $alpha: -0.85);
-          border-color: color.adjust($color-terciario, $alpha: -0.5);
-          color: $color-secundario;
+        p {
+          margin-bottom: $padding-minimo;
+          font-size: 11px;
+          
+          &::before {
+            content: '📜';
+            font-size: 8px;
+          }
+        }
+
+        a {
           text-decoration: none;
-          transform: translateY(-1px);
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          color: $color-terciario;
+          font-size: 11px;
+          font-weight: 500;
+          padding: 1px 6px;
+          border: 1px solid color.adjust($color-terciario, $alpha: -0.7);
+          border-radius: 12px;
+          background: rgba(255, 255, 255, 0.8);
+          transition: $transition-quick;
+          display: inline-block;
+          margin-top: 2px;
+          line-height: 1.2;
+
+          &:hover {
+            background: $color-terciario;
+            border-color: $color-terciario;
+            color: white;
+            text-decoration: none;
+            transform: translateY(-1px);
+          }
         }
       }
     }
@@ -212,26 +168,25 @@
     a:not(.certificacion a) {
       text-decoration: none;
       display: inline-block;
-      color: color.adjust($color-secundario, $lightness: -5%);
-      transition: $transition-smooth;
+      color: $color-texto-secundario;
+      transition: $transition-quick;
       position: relative;
-      padding: 2px 0;
+      font-size: 12px;
 
       &::after {
         content: '';
         position: absolute;
-        bottom: 0;
+        bottom: -1px;
         left: 0;
         width: 0;
         height: 1px;
-        background: linear-gradient(90deg, $color-terciario, color.adjust($color-terciario, $lightness: 20%));
-        transition: $transition-smooth;
+        background: $color-terciario;
+        transition: $transition-quick;
       }
 
       &:hover {
-        color: $color-secundario;
+        color: $color-terciario;
         text-decoration: none;
-        transform: translateX(2px);
         
         &::after {
           width: 100%;
@@ -241,5 +196,9 @@
   }
 }
 
-
-
+// Estilos específicos para contacto
+.contacto {
+  #titulo-contacto {
+    margin-top: 0 !important;
+  }
+}
