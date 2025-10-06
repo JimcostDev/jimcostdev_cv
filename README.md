@@ -1,88 +1,83 @@
 # JimcostDev CV
 
-Este es mi proyecto de **CV web personal**, desarrollado con **HTML**,
-**SCSS (Sass moderno)** y **JavaScript**.\
-Permite visualizar mi currículum, descargarlo en formato PDF y consumir
-datos desde una API construida con FastAPI.\
-El código está modularizado y estructurado para facilitar su
-mantenimiento y escalabilidad.
+Versión web descargable de mi currículum vitae, desarrollado con HTML, SCSS y JavaScript. Consume datos dinámicamente desde la API y permite generar un PDF profesional con un solo clic.
 
-------------------------------------------------------------------------
+## 🌐 Ecosistema del Proyecto
 
-## 🚀 Características principales
+Este repositorio forma parte de un ecosistema de 3 aplicaciones:
 
--   Visualización de CV en formato web responsivo.
--   Descarga del CV en formato PDF con un solo clic.
--   Consumo de datos dinámicos desde una API (FastAPI).
--   Estilos organizados con **SCSS** usando `@use` y `@forward`.
--   Proceso de build con **npm scripts**, **PostCSS**, **Autoprefixer**
-    y **cssnano**.
--   Código limpio y fácilmente extensible.
+- **[jimcostdev_api](https://github.com/JimcostDev/jimcostdev_api)** - API REST (FastAPI + MongoDB)
+- **[jimcostdev-astro](https://github.com/JimcostDev/jimcostdev-astro)** - Sitio web principal (Astro + Tailwind CSS)
+- **[jimcostdev_cv](https://github.com/JimcostDev/jimcostdev_cv)** - CV descargable (HTML + SCSS + JavaScript) ← *Estás aquí*
 
+## 📌 Características
 
-------------------------------------------------------------------------
+- 📄 **Visualización web responsiva** - CV adaptable a cualquier dispositivo
+- 📥 **Descarga en PDF** - Generación de currículum en formato PDF
+- 🔄 **Datos dinámicos** - Integración con API de FastAPI
+- 🎨 **Estilos modulares** - Arquitectura SCSS con `@use` y `@forward`
+- ⚡ **Build optimizado** - PostCSS, Autoprefixer y cssnano
+- 🧩 **Código modular** - Estructura escalable y mantenible
 
-## 🛠️ Tecnologías utilizadas
+## 🚀 Tecnologías Utilizadas
 
--   🖌️ **SCSS (Sass moderno)**: Estilos modulares y mantenibles.
--   🌐 **JavaScript**: Lógica del cliente, carga de datos y generación
-    de PDF.
--   ⚡ **FastAPI**: Backend para servir los datos del CV.
--   📄 **html2pdf.js**: Generación de PDF en el navegador.
--   📦 **npm + PostCSS (Autoprefixer, cssnano)**: Compilación, prefijos
-    automáticos y minificación.
+- **HTML5** - Estructura semántica del documento
+- **SCSS (Sass)** - Estilos modulares y mantenibles
+- **JavaScript** - Lógica del cliente y generación de PDF
+- **html2pdf.js** - Conversión de HTML a PDF en el navegador
+- **PostCSS** - Procesamiento de CSS (Autoprefixer + cssnano)
+- **FastAPI** - Backend para servir los datos del CV
 
-------------------------------------------------------------------------
+## 📦 Instalación
 
-## 📦 Instalación y uso
+### 1. Clonar el repositorio
+```bash
+git clone https://github.com/JimcostDev/jimcostdev_cv.git
+cd jimcostdev_cv
+```
 
-1.  Clonar el repositorio:
+### 2. Instalar dependencias
+```bash
+npm install
+```
 
-    ``` bash
-    git clone https://github.com/JimcostDev/jimcostdev_cv.git
-    cd jimcostdev_cv
-    ```
+### 3. Compilar los estilos
+```bash
+npm run build
+```
 
-2.  Instalar dependencias:
+Esto generará el archivo optimizado `assets/css/main.min.css`
 
-    ``` bash
-    npm install
-    ```
+### 4. Modo desarrollo (opcional)
 
-3.  Compilar los estilos:
+Para desarrollo con recompilación automática:
 
-    ``` bash
-    npm run build
-    ```
+```bash
+# Terminal 1 - Watch SCSS
+npm run watch:css
 
-    Esto generará `assets/css/main.min.css`.
+# Terminal 2 - Watch PostCSS (opcional)
+npm run postcss -- -w
+```
 
-4.  Para desarrollo con recompilación automática:
+### 5. Abrir el proyecto
 
-    ``` bash
-    npm run watch:css
-    ```
+Abre `index.html` en tu navegador preferido 🚀
 
-    y opcionalmente en otra terminal:
+## 🛠️ Scripts Disponibles
 
-    ``` bash
-    npm run postcss -- -w
-    ```
-
-5.  Abrir `index.html` en el navegador 🚀
-
-------------------------------------------------------------------------
+- `npm run build` - Compila y minifica los estilos para producción
+- `npm run watch:css` - Observa cambios en archivos SCSS
+- `npm run postcss` - Aplica Autoprefixer y cssnano
 
 ## 🤝 Contribuciones
 
-¡Las contribuciones son bienvenidas!\
-Si deseas mejorar algo, abre un **pull request** o crea un **issue**.
-
-------------------------------------------------------------------------
+¡Las contribuciones son bienvenidas! Si deseas mejorar algo, abre un **pull request** o crea un **issue**.
 
 ## 📜 Licencia
 
-Este proyecto está bajo la **Licencia MIT**.\
-Más detalles en el archivo [LICENSE](./LICENSE).
+Este proyecto está bajo la **Licencia MIT**. Consulta el archivo [LICENSE](./LICENSE) para más detalles.
 
+## 📬 Contacto
 
+Para más información, visita mi sitio web: [jimcostdev.com](https://jimcostdev.com)
