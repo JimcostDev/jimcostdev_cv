@@ -8,7 +8,7 @@ export async function actualizarContacto(data) {
 
   const campos = [
     { key: 'nationality', icon: 'fas fa-globe', label: '' },
-    // { key: 'phone_number', icon: 'fab fa-whatsapp', label: '' }, // si decides mostrarlo
+    { key: 'phone_number', icon: 'fab fa-whatsapp', label: '' }, // si decides mostrarlo
     { key: 'i_live_in', icon: 'fas fa-map-marker-alt', label: '' },
     { key: 'email', icon: 'fas fa-envelope', label: '' },
     { key: 'web', icon: 'fas fa-link', isLink: true, label: '' }
