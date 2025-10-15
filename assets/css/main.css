@@ -169,6 +169,7 @@ body {
 .contenedor aside .contacto,
 .contenedor aside .redes-sociales,
 .contenedor aside .skills,
+.contenedor aside .projects,
 .contenedor aside .certificacion {
   margin-bottom: 8px;
   position: relative;
@@ -177,6 +178,7 @@ body {
 .contenedor aside .contacto .titulo,
 .contenedor aside .redes-sociales .titulo,
 .contenedor aside .skills .titulo,
+.contenedor aside .projects .titulo,
 .contenedor aside .certificacion .titulo {
   color: #0f172a;
   font-weight: 600;
@@ -189,6 +191,7 @@ body {
 .contenedor aside .contacto .titulo::after,
 .contenedor aside .redes-sociales .titulo::after,
 .contenedor aside .skills .titulo::after,
+.contenedor aside .projects .titulo::after,
 .contenedor aside .certificacion .titulo::after {
   width: 16px;
   height: 1px;
@@ -197,6 +200,7 @@ body {
 .contenedor aside .contacto .linea,
 .contenedor aside .redes-sociales .linea,
 .contenedor aside .skills .linea,
+.contenedor aside .projects .linea,
 .contenedor aside .certificacion .linea {
   margin-bottom: 6px;
   background: #e2e8f0;
@@ -205,6 +209,7 @@ body {
 .contenedor aside .contacto p,
 .contenedor aside .redes-sociales p,
 .contenedor aside .skills p,
+.contenedor aside .projects p,
 .contenedor aside .certificacion p {
   margin-bottom: 3px;
   color: #475569;
@@ -219,12 +224,14 @@ body {
 .contenedor aside .contacto p:hover,
 .contenedor aside .redes-sociales p:hover,
 .contenedor aside .skills p:hover,
+.contenedor aside .projects p:hover,
 .contenedor aside .certificacion p:hover {
   color: #0f172a;
 }
 .contenedor aside .contacto p::before,
 .contenedor aside .redes-sociales p::before,
 .contenedor aside .skills p::before,
+.contenedor aside .projects p::before,
 .contenedor aside .certificacion p::before {
   content: "•";
   color: #0284c7;
@@ -237,6 +244,30 @@ body {
   font-size: 8px;
   flex-shrink: 0;
   margin-top: 2px;
+}
+.contenedor aside .projects .link-proyectos {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 4px;
+  color: #0284c7 !important;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border: 1px solid rgba(2, 132, 199, 0.3);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+.contenedor aside .projects .link-proyectos::after {
+  display: none;
+}
+.contenedor aside .projects .link-proyectos:hover {
+  background: #0284c7;
+  border-color: #0284c7;
+  color: white !important;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 .contenedor aside .skills p::before {
   content: "▸";
