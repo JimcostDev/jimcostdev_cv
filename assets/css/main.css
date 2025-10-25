@@ -147,7 +147,7 @@ body {
   align-items: flex-start;
   flex-direction: column;
   background: #f8fafc;
-  padding: 12px;
+  padding: 24px;
   width: 32%;
   position: relative;
   border-right: 1px solid #e2e8f0;
@@ -182,7 +182,8 @@ body {
 .contenedor aside .certificacion .titulo {
   color: #0f172a;
   font-weight: 600;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  margin-top: 8px;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -202,7 +203,7 @@ body {
 .contenedor aside .skills .linea,
 .contenedor aside .projects .linea,
 .contenedor aside .certificacion .linea {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   background: #e2e8f0;
   height: 0.5px;
 }
@@ -245,6 +246,9 @@ body {
   flex-shrink: 0;
   margin-top: 2px;
 }
+.contenedor aside .contacto:first-of-type .titulo {
+  margin-top: 0 !important;
+}
 .contenedor aside .projects .link-proyectos {
   display: inline-flex !important;
   align-items: center;
@@ -286,11 +290,11 @@ body {
   color: #0f172a;
   font-size: 12px;
   font-weight: 600;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
   line-height: 1.2;
 }
 .contenedor aside .certificacion .infoCertificacion p {
-  margin-bottom: 6px;
+  margin-bottom: 3px;
   font-size: 11px;
 }
 .contenedor aside .certificacion .infoCertificacion p::before {
@@ -308,7 +312,7 @@ body {
   background: rgba(255, 255, 255, 0.8);
   transition: all 0.2s ease;
   display: inline-block;
-  margin-top: 2px;
+  margin-top: 1px;
   line-height: 1.2;
 }
 .contenedor aside .certificacion .infoCertificacion a:hover {
@@ -344,10 +348,6 @@ body {
   width: 100%;
 }
 
-.contacto #titulo-contacto {
-  margin-top: 0 !important;
-}
-
 /* **************** ESTUDIOS Y EXPERIENCIA LABORAL ************************** */
 .contenedor .principal {
   display: flex;
@@ -378,7 +378,7 @@ body {
   color: #0284c7;
   font-size: 14px;
   font-weight: 600;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -386,7 +386,7 @@ body {
   color: #475569;
   font-size: 13px;
   line-height: 1.4;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   font-weight: 400;
 }
 .contenedor .principal .experiencia-laboral,
@@ -398,13 +398,13 @@ body {
 .contenedor .principal .experiencia-laboral .titulo,
 .contenedor .principal .educacion .titulo {
   margin-top: 0;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 .contenedor .principal .experiencia-laboral .linea-principal,
 .contenedor .principal .educacion .linea-principal {
   height: 1px;
   background: #e2e8f0;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 .contenedor .principal .experiencia-laboral .descripcion {
   padding-left: 0;
@@ -457,7 +457,7 @@ body {
 .contenedor .principal .experiencia-laboral .descripcion .experiencia-item h4 {
   color: #0284c7;
   font-weight: 600;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.3px;
@@ -547,7 +547,7 @@ body {
 .contenedor .principal .educacion .infoEducacion .educacion-item h4 {
   color: #0284c7;
   font-weight: 500;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   font-size: 12px;
   letter-spacing: 0.3px;
 }

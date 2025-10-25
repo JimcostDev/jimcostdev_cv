@@ -8,7 +8,7 @@
     align-items: flex-start;
     flex-direction: column;
     background: $color-cuaternario;
-    padding: $padding-seccion;
+    padding: 24px;
     width: 32%;
     position: relative;
     border-right: 1px solid $color-linea;
@@ -44,6 +44,7 @@
         color: $color-principal;
         font-weight: 600;
         margin-bottom: $padding-minimo;
+        margin-top: 8px; // Valor por defecto
         font-size: 13px;
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -92,6 +93,11 @@
           margin-top: 2px;
         }
       }
+    }
+
+    // CORRECCIÓN: Quitar margin-top del primer título
+    .contacto:first-of-type .titulo {
+      margin-top: 0 !important;
     }
 
     // Estilos específicos para proyectos
@@ -156,12 +162,12 @@
           color: $color-principal;
           font-size: 12px;
           font-weight: 600;
-          margin-bottom: 2px;
+          margin-bottom: 1px;
           line-height: 1.2;
         }
 
         p {
-          margin-bottom: $padding-minimo;
+          margin-bottom: 3px;
           font-size: 11px;
           
           &::before {
@@ -181,7 +187,7 @@
           background: rgba(255, 255, 255, 0.8);
           transition: $transition-quick;
           display: inline-block;
-          margin-top: 2px;
+          margin-top: 1px;
           line-height: 1.2;
 
           &:hover {
@@ -224,12 +230,5 @@
         }
       }
     }
-  }
-}
-
-// Estilos específicos para contacto
-.contacto {
-  #titulo-contacto {
-    margin-top: 0 !important;
   }
 }

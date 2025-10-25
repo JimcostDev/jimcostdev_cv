@@ -17,15 +17,16 @@ function generarPDF() {
       filename: nombreArchivo,
       image: { type: "jpeg", quality: 1 },
       html2canvas: {
-        scale: 3, // siempre alta calidad
+        scale: 3,
         letterRendering: true,
         useCORS: true,
       },
       jsPDF: {
-        unit: "in",
-        format: "a4", // fijo en A3 para evitar cortes
+        unit: "mm",
+        format: "a4",
         orientation: "portrait",
       },
+      pagebreak: { mode: 'avoid-all' } // Evita saltos de página
     };
 
     Swal.fire({
@@ -36,7 +37,25 @@ function generarPDF() {
     });
 
     try {
-      await html2pdf().set(opciones).from($elementoParaConvertir).save();
+      // Obtener dimensiones A4 en mm
+      const pageHeight = 297; // A4 height en mm
+      const pageWidth = 210;  // A4 width en mm
+      
+      await html2pdf()
+        .set(opciones)
+        .from($elementoParaConvertir)
+        .toPdf()
+        .get('pdf')
+        .then(function(pdf) {
+          // Asegurar que solo tenga 1 página
+          const totalPages = pdf.internal.getNumberOfPages();
+          
+          // Si hay más de 1 página, eliminar las extras
+          for (let i = totalPages; i > 1; i--) {
+            pdf.deletePage(i);
+          }
+        })
+        .save();
 
       Swal.fire({
         title: "¡Documento guardado!",
