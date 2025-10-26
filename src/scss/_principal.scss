@@ -47,6 +47,7 @@
           line-height: 1.4;
           margin-bottom: $padding-minimo;
           font-weight: 400;
+          text-align: justify;
         }
       }
     }
@@ -149,6 +150,7 @@
               line-height: 1.3;
               position: relative;
               padding-left: 10px;
+              text-align: justify;
               
               &::before {
                 content: '•';
@@ -256,6 +258,7 @@
               line-height: 1.3;
               position: relative;
               padding-left: 10px;
+              text-align: justify;
               
               &::before {
                 content: '•';
@@ -342,4 +345,3 @@
     }
   }
 }
-
