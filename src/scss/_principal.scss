@@ -34,7 +34,7 @@
       .descripcion {
         .rol {
           color: $color-terciario;
-          font-size: 14px;
+          font-size: $font-size-h2;
           font-weight: 600;
           margin-bottom: $padding-minimo;
           text-transform: uppercase;
@@ -43,7 +43,7 @@
         
         p {
           color: $color-texto-secundario;
-          font-size: 13px;
+          font-size: $font-size-body;
           line-height: 1.4;
           margin-bottom: $padding-minimo;
           font-weight: 400;
@@ -82,7 +82,6 @@
           padding-left: 10px;
           position: relative;
 
-          // Punto en la timeline
           &::before {
             content: '';
             position: absolute;
@@ -97,7 +96,7 @@
           .experiencia-ubicacion,
           .experiencia-duracion {
             color: $color-texto-secundario;
-            font-size: 11px;
+            font-size: $font-size-small;
             font-weight: 500;
             margin-bottom: 2px;
             display: inline-block;
@@ -120,21 +119,19 @@
             }
           }
 
-          // Título del puesto
           h3 {
             color: $color-principal;
             font-weight: 700;
             margin-bottom: 2px;
-            font-size: 15px;
+            font-size: $font-size-h3;
             line-height: 1.2;
           }
           
-          // Empresa/organización
           h4 {
             color: $color-terciario;
             font-weight: 600;
             margin-bottom: $padding-minimo;
-            font-size: 13px;
+            font-size: $font-size-h4;
             text-transform: uppercase;
             letter-spacing: 0.3px;
           }
@@ -146,7 +143,7 @@
             p {
               margin-bottom: 3px;
               color: $color-texto-secundario;
-              font-size: 12px;
+              font-size: $font-size-body;
               line-height: 1.3;
               position: relative;
               padding-left: 10px;
@@ -202,7 +199,6 @@
           padding-left: 10px;
           position: relative;
 
-          // Punto en la timeline
           &::before {
             content: '';
             position: absolute;
@@ -216,7 +212,7 @@
 
           .educacion-year {
             color: $color-texto-secundario;
-            font-size: 11px;
+            font-size: $font-size-small;
             font-weight: 500;
             display: inline-block;
             background: $color-cuaternario;
@@ -232,21 +228,19 @@
             }
           }
 
-          // Título del curso/carrera
           h3 {
             color: $color-principal;
             font-weight: 700;
             margin-bottom: 2px;
-            font-size: 15px;
+            font-size: $font-size-h3;
             line-height: 1.2;
           }
           
-          // Institución
           h4 {
             color: $color-terciario;
             font-weight: 500;
             margin-bottom: $padding-minimo;
-            font-size: 12px;
+            font-size: $font-size-h4;
             letter-spacing: 0.3px;
           }
 
@@ -254,7 +248,7 @@
             p {
               margin-bottom: 3px;
               color: $color-texto-secundario;
-              font-size: 12px;
+              font-size: $font-size-body;
               line-height: 1.3;
               position: relative;
               padding-left: 10px;
@@ -322,7 +316,7 @@
     border: none;
     border-radius: $border-radius;
     color: white;
-    font-size: 12px;
+    font-size: $font-size-body;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.3px;

@@ -10,7 +10,7 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Helvetica Neue", sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.4;
   font-weight: 400;
   background: #ffffff;
@@ -184,7 +184,7 @@ body {
   font-weight: 600;
   margin-bottom: 8px;
   margin-top: 8px;
-  font-size: 13px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   position: relative;
@@ -408,7 +408,7 @@ body {
 @media print {
   .contenedor aside .projects .print-only {
     display: inline;
-    color: #666;
+    color: #475569;
     font-size: 10px;
   }
   .contenedor aside .projects .proyecto-item a {
@@ -422,7 +422,7 @@ body {
   }
   .contenedor aside .redes-sociales .print-only {
     display: inline;
-    color: #666;
+    color: #475569;
     font-size: 10px;
   }
 }
@@ -462,7 +462,7 @@ body {
 }
 .contenedor .principal .perfil .descripcion p {
   color: #475569;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.4;
   margin-bottom: 8px;
   font-weight: 400;
@@ -530,14 +530,14 @@ body {
   color: #0f172a;
   font-weight: 700;
   margin-bottom: 2px;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.2;
 }
 .contenedor .principal .experiencia-laboral .descripcion .experiencia-item h4 {
   color: #0284c7;
   font-weight: 600;
   margin-bottom: 8px;
-  font-size: 13px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.3px;
 }
@@ -621,7 +621,7 @@ body {
   color: #0f172a;
   font-weight: 700;
   margin-bottom: 2px;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.2;
 }
 .contenedor .principal .educacion .infoEducacion .educacion-item h4 {

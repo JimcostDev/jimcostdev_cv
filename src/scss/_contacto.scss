@@ -44,8 +44,8 @@
         color: $color-principal;
         font-weight: 600;
         margin-bottom: $padding-minimo;
-        margin-top: 8px; // Valor por defecto
-        font-size: 13px;
+        margin-top: 8px;
+        font-size: $font-size-h2;
         text-transform: uppercase;
         letter-spacing: 0.5px;
         position: relative;
@@ -71,14 +71,13 @@
         gap: 6px;
         font-weight: 400;
         line-height: 1.3;
-        font-size: 12px;
+        font-size: $font-size-body;
         transition: $transition-quick;
         
         &:hover {
           color: $color-principal;
         }
         
-        // Punto minimalista
         &::before {
           content: '•';
           color: $color-terciario;
@@ -95,20 +94,18 @@
       }
     }
 
-    // CORRECCIÓN: Quitar margin-top del primer título
     .contacto:first-of-type .titulo {
       margin-top: 0 !important;
     }
 
     // Estilos específicos para proyectos
     .projects {
-      // Enlace estático (por si acaso)
       .link-proyectos {
         display: inline-flex !important;
         align-items: center;
         gap: 4px;
         color: $color-terciario !important;
-        font-size: 12px;
+        font-size: $font-size-body;
         font-weight: 500;
         padding: 6px 12px;
         border: 1px solid color.adjust($color-terciario, $alpha: -0.7);
@@ -118,7 +115,7 @@
         text-decoration: none;
 
         &::after {
-          display: none; // Desactivar la línea inferior del hover general
+          display: none;
         }
 
         &:hover {
@@ -130,7 +127,6 @@
         }
       }
 
-      // Lista de proyectos dinámicos
       .lista-proyectos {
         margin-top: 8px;
         display: flex;
@@ -144,10 +140,9 @@
         align-items: flex-start;
         gap: 6px;
         line-height: 1.3;
-        font-size: 12px;
+        font-size: $font-size-body;
         transition: $transition-quick;
 
-        // Quitar el punto automático
         &::before {
           display: none !important;
         }
@@ -230,7 +225,7 @@
       .infoCertificacion {
         h4 {
           color: $color-principal;
-          font-size: 12px;
+          font-size: $font-size-h4;
           font-weight: 600;
           margin-bottom: 1px;
           line-height: 1.2;
@@ -238,7 +233,7 @@
 
         p {
           margin-bottom: 3px;
-          font-size: 11px;
+          font-size: $font-size-small;
           
           &::before {
             content: '📜';
@@ -249,7 +244,7 @@
         a {
           text-decoration: none;
           color: $color-terciario;
-          font-size: 11px;
+          font-size: $font-size-small;
           font-weight: 500;
           padding: 1px 6px;
           border: 1px solid color.adjust($color-terciario, $alpha: -0.7);
@@ -278,7 +273,7 @@
       color: $color-texto-secundario;
       transition: $transition-quick;
       position: relative;
-      font-size: 12px;
+      font-size: $font-size-body;
 
       &::after {
         content: '';
@@ -309,7 +304,7 @@
     .projects {
       .print-only {
         display: inline;
-        color: #666;
+        color: $color-texto-secundario;
         font-size: 10px;
       }
 
@@ -328,7 +323,7 @@
 
     .redes-sociales .print-only {
       display: inline;
-      color: #666;
+      color: $color-texto-secundario;
       font-size: 10px;
     }
   }
