@@ -1,15 +1,17 @@
+export const API_BASE_URL = 'https://jimcostdev-api.fastapicloud.dev';
+const API_USER = 'jimcostdev';
+
 export async function cargarDatos(endpoint) {
-    const user = 'jimcostdev';
-    const urlAPI = `https://jimcostdev-api.fastapicloud.dev/${endpoint}/p/${user}`;
+    const urlAPI = `${API_BASE_URL}/${endpoint}/p/${API_USER}`;
     try {
         const response = await fetch(urlAPI);
         if (!response.ok) {
             throw new Error(`No se pudo obtener la respuesta de la API para el endpoint ${endpoint}`);
         }
         const data = await response.json();
-        return data; // Devuelve los datos para utilizarlos donde llames a esta función
+        return data; 
     } catch (error) {
         console.error('Error al obtener los datos:', error);
-        return null; // Manejo de errores, puedes retornar algo específico en caso de error
+        return null; 
     }
 }
