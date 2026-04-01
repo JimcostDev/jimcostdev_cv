@@ -1,6 +1,6 @@
 export async function cargarDatos(endpoint) {
     const user = 'jimcostdev';
-    const urlAPI = `https://jimcostdev.koyeb.app/${endpoint}/p/${user}`;
+    const urlAPI = `https://jimcostdev-api.fastapicloud.dev/${endpoint}/p/${user}`;
     try {
         const response = await fetch(urlAPI);
         if (!response.ok) {
